@@ -1,0 +1,36 @@
+[
+  {
+    "name": "microservices-demo-no-baseline",
+    "inputLinks": "microservices-demo.json"
+  },
+  {
+    "name": "microservices-demo-ciso-baseline",
+    "inputLinks": "microservices-demo.json",
+    "args": ["-b", "baseline_yamls/ciso_denied_ports.yaml"]
+  },
+  {
+    "name": "microservices-demo-restrict-payments-baseline",
+    "inputLinks": "microservices-demo.json",
+    "args": ["-b", "baseline_yamls/restrict_access_to_payment.yaml"]
+  },
+  {
+    "name": "microservices-demo-allow-loadgen-baseline",
+    "inputLinks": "microservices-demo.json",
+    "args": ["-b", "baseline_yamls/allow_load_generation.yaml"]
+  },
+  {
+    "name": "microservices-demo-all-baselines",
+    "inputLinks": "microservices-demo.json",
+    "args": ["-b", "baseline_yamls/allow_load_generation.yaml", "-b", "baseline_yamls/restrict_access_to_payment.yaml",
+             "-b", "baseline_yamls/ciso_denied_ports.yaml", "-b", "baseline_yamls/allow_access_to_google.yaml"]
+  },
+  {
+    "name": "akmebank-no-baseline",
+    "inputLinks": "akmebank-links.json"
+  },
+  {
+    "name": "akmebank-allow-https-baseline",
+    "inputLinks": "akmebank-links.json",
+    "args": ["-b", "baseline_yamls/allow_https_egress.yaml"]
+  }
+]

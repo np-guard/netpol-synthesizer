@@ -1,0 +1,67 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: account-command-netpol
+spec:
+  egress: []
+  ingress:
+  - from:
+    - podSelector: {}
+    ports:
+    - port: 8080
+  podSelector:
+    matchLabels:
+      app: account-command-selector
+  policyTypes:
+  - Ingress
+  - Egress
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: akmebank-ui-netpol
+spec:
+  egress:
+  - ports:
+    - port: 8080
+    to:
+    - podSelector:
+        matchLabels:
+          app: account-query-selector
+  - ports:
+    - port: 53
+      protocol: UDP
+    to:
+    - namespaceSelector: {}
+      podSelector:
+        matchLabels:
+          k8s-app: kube-dns
+  ingress:
+  - ports:
+    - port: 8000
+  podSelector:
+    matchLabels:
+      app: akmebank-ui-selector
+  policyTypes:
+  - Ingress
+  - Egress
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: account-query-netpol
+spec:
+  egress: []
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: akmebank-ui-selector
+    ports:
+    - port: 8080
+  podSelector:
+    matchLabels:
+      app: account-query-selector
+  policyTypes:
+  - Ingress
+  - Egress
