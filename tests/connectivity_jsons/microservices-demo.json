@@ -1,7 +1,7 @@
 [
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -36,7 +36,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -59,7 +59,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -82,7 +82,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -113,7 +113,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -136,7 +136,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -159,7 +159,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -190,7 +190,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -213,7 +213,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -236,7 +236,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -267,7 +267,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -290,7 +290,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -313,7 +313,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -343,7 +343,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -368,7 +368,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -391,7 +391,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -422,7 +422,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -447,7 +447,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -470,7 +470,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -500,7 +500,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -525,7 +525,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -548,7 +548,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -579,7 +579,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -604,7 +604,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -627,7 +627,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -657,7 +657,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -682,7 +682,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -705,7 +705,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -736,7 +736,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -761,7 +761,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -784,7 +784,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -814,7 +814,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -839,7 +839,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -862,7 +862,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -893,7 +893,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -918,7 +918,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -941,7 +941,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -972,7 +972,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1002,7 +1002,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1025,7 +1025,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1056,7 +1056,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1086,7 +1086,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1109,7 +1109,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1140,7 +1140,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1170,7 +1170,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1193,7 +1193,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1224,7 +1224,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1254,7 +1254,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1277,7 +1277,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1307,7 +1307,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1330,7 +1330,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1353,7 +1353,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1384,7 +1384,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1407,7 +1407,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1430,7 +1430,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1460,7 +1460,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1483,7 +1483,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1506,7 +1506,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1537,7 +1537,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1560,7 +1560,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1583,7 +1583,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1613,7 +1613,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1636,7 +1636,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1659,7 +1659,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1690,7 +1690,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1713,7 +1713,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1736,7 +1736,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1766,7 +1766,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1789,7 +1789,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1812,7 +1812,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1843,7 +1843,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1866,7 +1866,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1889,7 +1889,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1919,7 +1919,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1942,7 +1942,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -1965,7 +1965,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -1995,7 +1995,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2018,7 +2018,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2041,7 +2041,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2071,7 +2071,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2094,7 +2094,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2117,7 +2117,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2147,7 +2147,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2170,7 +2170,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2193,7 +2193,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2216,7 +2216,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2247,7 +2247,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2270,7 +2270,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2290,7 +2290,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2321,7 +2321,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2344,7 +2344,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2364,7 +2364,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2395,7 +2395,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2418,7 +2418,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2438,7 +2438,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2469,7 +2469,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2492,7 +2492,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2512,7 +2512,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2543,7 +2543,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2566,7 +2566,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2586,7 +2586,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2617,7 +2617,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2640,7 +2640,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2670,7 +2670,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2696,7 +2696,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2719,7 +2719,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2749,7 +2749,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2772,7 +2772,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2795,7 +2795,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2825,7 +2825,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2848,7 +2848,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2871,7 +2871,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2901,7 +2901,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2924,7 +2924,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -2947,7 +2947,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -2977,7 +2977,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3000,7 +3000,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3023,7 +3023,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3054,7 +3054,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3077,7 +3077,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3100,7 +3100,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3125,7 +3125,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3148,7 +3148,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3171,7 +3171,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3201,7 +3201,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3224,7 +3224,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3247,7 +3247,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3272,7 +3272,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3295,7 +3295,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3318,7 +3318,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3349,7 +3349,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3372,7 +3372,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3395,7 +3395,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3425,7 +3425,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3448,7 +3448,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3471,7 +3471,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3502,7 +3502,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3525,7 +3525,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3548,7 +3548,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3573,7 +3573,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3596,7 +3596,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3619,7 +3619,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3649,7 +3649,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3672,7 +3672,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3695,7 +3695,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3720,7 +3720,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3743,7 +3743,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3766,7 +3766,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3797,7 +3797,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3820,7 +3820,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3843,7 +3843,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3874,7 +3874,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3899,7 +3899,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -3922,7 +3922,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3953,7 +3953,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -3978,7 +3978,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4001,7 +4001,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4032,7 +4032,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4057,7 +4057,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4080,7 +4080,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4111,7 +4111,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4136,7 +4136,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4159,7 +4159,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4184,7 +4184,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4207,7 +4207,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4230,7 +4230,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4255,7 +4255,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4278,7 +4278,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4301,7 +4301,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4326,7 +4326,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4349,7 +4349,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4372,7 +4372,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4397,7 +4397,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4420,7 +4420,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4443,7 +4443,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4473,7 +4473,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4496,7 +4496,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4519,7 +4519,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4550,7 +4550,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4573,7 +4573,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4596,7 +4596,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4626,7 +4626,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4649,7 +4649,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4672,7 +4672,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4703,7 +4703,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4726,7 +4726,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4749,7 +4749,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4779,7 +4779,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4802,7 +4802,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4825,7 +4825,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4856,7 +4856,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4879,7 +4879,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4902,7 +4902,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4932,7 +4932,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -4955,7 +4955,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -4978,7 +4978,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5009,7 +5009,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5032,7 +5032,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5055,7 +5055,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5086,7 +5086,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5116,7 +5116,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5139,7 +5139,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5170,7 +5170,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5200,7 +5200,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5223,7 +5223,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5254,7 +5254,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5284,7 +5284,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5307,7 +5307,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5338,7 +5338,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5368,7 +5368,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5391,7 +5391,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5422,7 +5422,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5447,7 +5447,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5470,7 +5470,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5501,7 +5501,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5526,7 +5526,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5549,7 +5549,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5580,7 +5580,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5605,7 +5605,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5628,7 +5628,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5659,7 +5659,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5684,7 +5684,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5707,7 +5707,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5727,7 +5727,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5758,7 +5758,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5781,7 +5781,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5801,7 +5801,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5832,7 +5832,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5855,7 +5855,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5875,7 +5875,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5906,7 +5906,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -5929,7 +5929,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5949,7 +5949,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -5980,7 +5980,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6003,7 +6003,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6023,7 +6023,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6054,7 +6054,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6077,7 +6077,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6097,7 +6097,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6128,7 +6128,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6151,7 +6151,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6181,7 +6181,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6204,7 +6204,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6227,7 +6227,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6257,7 +6257,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6280,7 +6280,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6303,7 +6303,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6333,7 +6333,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6356,7 +6356,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6379,7 +6379,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6409,7 +6409,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6432,7 +6432,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6455,7 +6455,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6485,7 +6485,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6508,7 +6508,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6531,7 +6531,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6562,7 +6562,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6585,7 +6585,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6608,7 +6608,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6633,7 +6633,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6656,7 +6656,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6679,7 +6679,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6709,7 +6709,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6732,7 +6732,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6755,7 +6755,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6780,7 +6780,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6803,7 +6803,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6826,7 +6826,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6857,7 +6857,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6880,7 +6880,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6903,7 +6903,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6933,7 +6933,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -6956,7 +6956,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -6979,7 +6979,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7010,7 +7010,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7033,7 +7033,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7056,7 +7056,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7081,7 +7081,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7104,7 +7104,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7127,7 +7127,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7157,7 +7157,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7180,7 +7180,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7203,7 +7203,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7228,7 +7228,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7251,7 +7251,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7274,7 +7274,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7305,7 +7305,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7328,7 +7328,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7351,7 +7351,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7381,7 +7381,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7406,7 +7406,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7429,7 +7429,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7460,7 +7460,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7485,7 +7485,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7508,7 +7508,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7538,7 +7538,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7563,7 +7563,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7586,7 +7586,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7617,7 +7617,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7642,7 +7642,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7665,7 +7665,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7695,7 +7695,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7720,7 +7720,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7743,7 +7743,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7774,7 +7774,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7799,7 +7799,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7822,7 +7822,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7852,7 +7852,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7877,7 +7877,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7900,7 +7900,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7931,7 +7931,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -7956,7 +7956,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -7979,7 +7979,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8009,7 +8009,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8032,7 +8032,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8055,7 +8055,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8086,7 +8086,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8109,7 +8109,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8132,7 +8132,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8162,7 +8162,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8185,7 +8185,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8208,7 +8208,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8239,7 +8239,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8262,7 +8262,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8285,7 +8285,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8315,7 +8315,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8338,7 +8338,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8361,7 +8361,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8392,7 +8392,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8415,7 +8415,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8438,7 +8438,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8468,7 +8468,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8491,7 +8491,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8514,7 +8514,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8545,7 +8545,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8568,7 +8568,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8591,7 +8591,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8621,7 +8621,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8644,7 +8644,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8667,7 +8667,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8698,7 +8698,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8721,7 +8721,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8744,7 +8744,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8774,7 +8774,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8797,7 +8797,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8820,7 +8820,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8851,7 +8851,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8874,7 +8874,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8897,7 +8897,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8927,7 +8927,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -8950,7 +8950,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -8973,7 +8973,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9004,7 +9004,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9027,7 +9027,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -9050,7 +9050,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9080,7 +9080,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9103,7 +9103,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -9126,7 +9126,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9157,7 +9157,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9180,7 +9180,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -9203,7 +9203,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9228,7 +9228,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9251,7 +9251,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -9274,7 +9274,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9299,7 +9299,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9322,7 +9322,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -9345,7 +9345,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9370,7 +9370,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9393,7 +9393,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -9416,7 +9416,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9441,7 +9441,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9464,7 +9464,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -9487,7 +9487,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9518,7 +9518,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9541,7 +9541,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -9564,7 +9564,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9595,7 +9595,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9618,7 +9618,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -9641,7 +9641,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9672,7 +9672,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9695,7 +9695,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {
@@ -9718,7 +9718,7 @@
     },
     {
         "source": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9749,7 +9749,7 @@
             }
         },
         "target": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "Resource": {
@@ -9772,7 +9772,7 @@
             }
         },
         "link": {
-            "git_url": "https://github.ibm.com/shift-left-netconfig/microservices-demo",
+            "git_url": "",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
             "resource": {

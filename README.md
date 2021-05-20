@@ -8,7 +8,7 @@ and nothing more.
 * Python 3.7 or above
 
 ### Installation:
-1. `git clone git@github.ibm.com:shift-left-netconfig/netpol_generator.git`
+1. `git clone git@github.com:shift-left-netconfig/netpol_generator.git`
 1. `cd netpol_generator`   
 1. `python3 -m venv venv`
 1. `source venv/bin/activate.csh` (the exact script may depend on the shell you are using) 
