@@ -15,9 +15,14 @@ and nothing more.
 1. `pip install -r requirements.txt`
 
 ### Usage:
-```
+```commandline
 python src/netpol_synth.py [-o <output_file>] [-b baseline_rules_file] <connectivity_file>
 ```
 * `connectivity_file` is the path to a JSON file describing connectivity
 * `output_file` *(optional)* is a path to output file where the resulting NetworkPolicy resources will be dumped (in YAML format). If omitted, output will be sent to stdout.
 * `baseline_rules_file` is a yaml file containing a list of baseline rules. See [this example](tests/baseline_yamls/ciso_denied_ports.yaml)
+
+For example:
+```commandline
+python src/netpol_synth.py -o test.yaml -b tests/baseline_yamls/allow_load_generation.yaml tests/connectivity_jsons/microservices-demo.json
+```
