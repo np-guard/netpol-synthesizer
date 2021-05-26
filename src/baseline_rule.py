@@ -6,7 +6,17 @@
 """
 A module for storing and querying baseline rules
 """
+from enum import Enum
+import yaml
 from selector import Selector, SelectorOp, IpSelector
+
+
+class BaselineRuleAction(Enum):
+    """
+    Allowed actions for a baseline rule
+    """
+    deny = 0
+    allow = 1
 
 
 class BaselineRule:
@@ -17,7 +27,7 @@ class BaselineRule:
         self.name = rule_record.get('name', '<no name>')
         print(f'processing rule {self.name}')
         self.description = rule_record.get('description', '')
-        self.action = rule_record.get('action', 'allow')
+        self.action = BaselineRuleAction[rule_record.get('action', 'allow')]
         self.source = Selector.parse_selectors(rule_record.get('from', ''))
         self.target = Selector.parse_selectors(rule_record.get('to', ''))
         self.protocol = rule_record.get('protocol')
@@ -127,11 +137,17 @@ class BaselineRule:
             'policyTypes': [policy_type]
         }
         policy_spec.update(policy_selector)
-        ports_array = self.get_port_array()
+        rule_to_add = {'ports': self.get_port_array()}
         if is_ingress_policy:
-            policy_spec['ingress'] = [{'from': self._selectors_as_netpol_peer(self.source), 'ports': ports_array}]
+            from_selector = self._selectors_as_netpol_peer(self.source)
+            if from_selector:
+                rule_to_add.update({'from': [from_selector]})
+            policy_spec['ingress'] = [rule_to_add]
         else:
-            policy_spec['egress'] = [{'to': self._selectors_as_netpol_peer(self.target), 'ports': ports_array}]
+            to_selector = self._selectors_as_netpol_peer(self.target)
+            if to_selector:
+                rule_to_add.update({'to': [to_selector]})
+            policy_spec['egress'] = [rule_to_add]
 
         return {
             'apiVersion': 'networking.k8s.io/v1',
@@ -139,3 +155,14 @@ class BaselineRule:
             'metadata': {'name': self.name},
             'spec': policy_spec
         }
+
+
+class BaselineRules(list):
+    """
+    Simply a collection of BaselineRule objects
+    """
+    def __init__(self, baseline_files):
+        super().__init__()
+        for baseline_file in baseline_files or []:
+            for rule_record in yaml.load(baseline_file, Loader=yaml.SafeLoader):
+                self.append(BaselineRule(rule_record))

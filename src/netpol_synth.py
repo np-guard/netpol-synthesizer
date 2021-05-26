@@ -10,7 +10,7 @@ import argparse
 from dataclasses import dataclass, field
 from typing import Optional
 import yaml
-from baseline_rule import BaselineRule
+from baseline_rule import BaselineRules, BaselineRuleAction
 
 
 class NoAliasDumper(yaml.SafeDumper):
@@ -41,29 +41,9 @@ class NetpolSynthesizer:
     """
     def __init__(self, connectivity_file, baseline_files):
         self.deployments = {}
-        self.baseline_allow_rules, self.baseline_deny_rules = self._process_baseline_files(baseline_files)
+        self.baseline_rules = BaselineRules(baseline_files)
         self._process_connectivity_file(connectivity_file)
         self._add_must_allow_connections()
-
-    @staticmethod
-    def _process_baseline_files(baseline_files):
-        """
-        Processes a baseline file, extracting rules as BaselineRule
-        :param list baseline_files: A list of YAML files with baseline rules in the form of firewall rules
-        :return: a list of allow rules and a list of deny rules
-        :rtype: list[BaselineRule], list[BaselineRule]
-        """
-        allow_rules = []
-        deny_rules = []
-        for baseline_file in baseline_files or []:
-            for rule_record in yaml.load(baseline_file, Loader=yaml.SafeLoader):
-                rule = BaselineRule(rule_record)
-                if rule.action == 'allow':
-                    allow_rules.append(rule)
-                else:
-                    deny_rules.append(rule)
-
-        return allow_rules, deny_rules
 
     def _process_connectivity_file(self, connectivity_file):
         """
@@ -115,8 +95,9 @@ class NetpolSynthesizer:
         return self.deployments[name]
 
     def _allowed_by_baseline(self, source_labels, target_labels, port_list):
-        for rule in self.baseline_deny_rules:
-            if rule.matches_connection(source_labels, target_labels, port_list):
+        for rule in self.baseline_rules:
+            if rule.action == BaselineRuleAction.deny and \
+                    rule.matches_connection(source_labels, target_labels, port_list):
                 return rule.name
         return None
 
@@ -136,7 +117,9 @@ class NetpolSynthesizer:
 
     def _add_must_allow_connections(self):
         for deploy in self.deployments.values():
-            for rule in self.baseline_allow_rules:
+            for rule in self.baseline_rules:
+                if not rule.action == BaselineRuleAction.allow:
+                    continue
                 if rule.matches_source(deploy.labels):
                     deploy.egress_conns.append((rule.targets_as_netpol_peer(), rule.get_port_array()))
                 if rule.matches_target(deploy.labels):

@@ -1,22 +1,22 @@
-- name: no_ftp
+- name: no-ftp
   description: Forbid ftp into any pod
   protocol: TCP
   port_min: 20
   port_max: 21
   action: deny
-- name: no_telnet
+- name: no-telnet
   description: Forbid telnet into any pod
   protocol: TCP
   port_min: 23
   port_max: 23
   action: deny
-- name: no_smtp
+- name: no-smtp
   description: Forbid smtp into any pod
   protocol: TCP
   port_min: 25
   port_max: 25
   action: deny
-- name: no_imap
+- name: no-imap
   description: Forbid imap into any pod
   protocol: TCP
   port_min: 143
