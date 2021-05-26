@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PylintConfigService">
+    <option name="customPylintPath" value="C:\nevo\projects\netpol-synthesizer\venv\Scripts\pylint.exe" />
+    <option name="pylintArguments" value="-d line-too-long --init-hook &quot;import sys; sys.path.append('src')&quot;" />
+    <option name="scanBeforeCheckin" value="false" />
+  </component>
+</project>

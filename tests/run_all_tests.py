@@ -5,7 +5,7 @@ Run all tests in a file called "tests.json" (should be located in the current di
 from os import path
 import sys
 import json
-from netpol_gen import netpol_gen_main
+from netpol_synth import netpol_synth_main
 
 
 def get_output_file_path(test_record, er_file=False):
@@ -36,7 +36,7 @@ def run_netpol_gen(test_record):
     print(f'Running netpol_gen with args: {args_str}')
     # noinspection PyBroadException
     try:
-        netpol_gen_main(args)
+        netpol_synth_main(args)
         return True
     except BaseException as ex:
         print('Error: Executing netpol_gen failed: ' + str(ex))

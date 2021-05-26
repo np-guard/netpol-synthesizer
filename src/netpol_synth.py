@@ -35,9 +35,9 @@ class DeploymentLinks:
     egress_conns: list = field(default_factory=list)
 
 
-class NetpolGenerator:
+class NetpolSynthesizer:
     """
-    This is the main class for the conversion. Call its generate() method to generate the K8s NetworkPolicies resources
+    This is the main class for the conversion. Call its synthesize() method to generate k8s NetworkPolicy resources
     """
     def __init__(self, connectivity_file, baseline_files):
         self.deployments = {}
@@ -164,7 +164,7 @@ class NetpolGenerator:
 
         return res_rules
 
-    def generate(self, output_file):
+    def synthesize(self, output_file):
         """
         Generates NetworkPolicies in yaml format based on the analysis done in the ctor.
         If output file is specified, the output is dumped into the file. Otherwise, stdout is used
@@ -193,7 +193,7 @@ class NetpolGenerator:
             print(yaml.dump_all(netpols))
 
 
-def netpol_gen_main(args=None):
+def netpol_synth_main(args=None):
     """
     This is the main entry point to generating policies
     :param args: Commandline arguments
@@ -207,8 +207,8 @@ def netpol_gen_main(args=None):
                         help='Output file for NetworkPolicy resources')
     args = parser.parse_args(args)
 
-    NetpolGenerator(args.connectivity_file, args.baseline).generate(args.output)
+    NetpolSynthesizer(args.connectivity_file, args.baseline).synthesize(args.output)
 
 
 if __name__ == "__main__":
-    netpol_gen_main()
+    netpol_synth_main()
