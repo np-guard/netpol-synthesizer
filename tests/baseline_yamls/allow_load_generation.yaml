@@ -1,4 +1,4 @@
-- name: allow_load_generation
+- name: allow-load-generation
   description: Allow loadgenerator to access all pods at port 32000, except for payment-service pods
   protocol: TCP
   port_min: 32000
