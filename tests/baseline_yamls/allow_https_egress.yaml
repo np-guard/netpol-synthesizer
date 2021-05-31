@@ -1,4 +1,4 @@
-- name: allow_https
+- name: allow-https
   description: Allow https connections to outside of the cluster
   from: app=account-query-selector
   to: 0.0.0.0/0

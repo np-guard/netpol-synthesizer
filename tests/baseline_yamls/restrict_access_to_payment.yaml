@@ -1,4 +1,4 @@
-- name: require_usesPayments_label_to_access_payments_service
+- name: require-label-to-access-payments-service
   description: Deny access to payment service if deployment does not have the usesPayments label set to true
   from: usesPayments notin (true, True), stage!=dev
   to: app=paymentservice
