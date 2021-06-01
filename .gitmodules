@@ -1,3 +1,4 @@
 [submodule "baseline-rules"]
-	path = baseline-rules
+	path = baseline_rules
 	url = ../baseline-rules.git
+        branch = master
