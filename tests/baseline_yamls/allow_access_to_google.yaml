@@ -1,5 +1,0 @@
-- name: allow-access-to-google
-  description: Allow connecting to Google
-  from: app!=paymentservice
-  to: 172.217.0.0/16
-  action: allow
