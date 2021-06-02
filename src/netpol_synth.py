@@ -7,9 +7,16 @@
 This module converts a file describing discovered connectivity in a K8s cluster into a set of k8s NetworkPolicies
 """
 import argparse
+from pathlib import Path
+import sys
 from dataclasses import dataclass, field
 from typing import Optional
 import yaml
+
+base_dir = Path(__file__).parent.resolve()
+common_services_dir = (base_dir / '../baseline-rules/src').resolve()
+sys.path.insert(0, str(common_services_dir))
+
 from baseline_rule import BaselineRules, BaselineRuleAction
 
 
