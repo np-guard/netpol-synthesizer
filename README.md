@@ -8,13 +8,11 @@ and nothing more.
 * Python 3.7 or above
 
 ### Installation:
-1. `git clone git@github.com:shift-left-netconfig/netpol-synthesizer.git`
+1. `git clone --recurse-submodules git@github.com:shift-left-netconfig/netpol-synthesizer.git`
 1. `cd netpol-synthesizer`   
-2. `git submodule init`
-3. `git submodule update`
-4. `python3 -m venv venv`
-5. `source venv/bin/activate.csh` (the exact script may depend on the shell you are using) 
-6. `pip install -r requirements.txt`
+1. `python3 -m venv venv`
+1. `source venv/bin/activate.csh` (the exact script may depend on the shell you are using) 
+1. `pip install -r requirements.txt`
 
 ### Usage:
 ```commandline
