@@ -24,5 +24,5 @@ python src/netpol_synth.py [-o <output_file>] [-b baseline_rules_file] <connecti
 
 For example:
 ```commandline
-python src/netpol_synth.py -o test.yaml -b tests/baseline_yamls/allow_load_generation.yaml tests/connectivity_jsons/microservices-demo.json
+ python src/netpol_synth.py -o test.yaml -b baseline-rules/examples/allow_load_generation.yaml tests/connectivity_jsons/microservices-demo.json
 ```
