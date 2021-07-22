@@ -20,7 +20,7 @@ python src/netpol_synth.py [-o <output_file>] [-b baseline_rules_file] <connecti
 ```
 * `connectivity_file` is the path to a JSON file describing connectivity
 * `output_file` *(optional)* is a path to output file where the resulting NetworkPolicy resources will be dumped (in YAML format). If omitted, output will be sent to stdout.
-* `baseline_rules_file` is a yaml file containing a list of baseline rules. See [this example](baseline-rules/examples/ciso_denied_ports.yaml)
+* `baseline_rules_file` is a yaml file containing a list of baseline rules. See [these examples](https://github.com/shift-left-netconfig/baseline-rules/tree/master/examples)
 
 For example:
 ```commandline
