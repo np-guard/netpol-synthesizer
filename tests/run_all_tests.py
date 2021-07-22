@@ -2,9 +2,15 @@
 Run all tests in a file called "tests.json" (should be located in the current directory
 """
 
+from pathlib import Path
 from os import path
 import sys
 import json
+
+base_dir = Path(__file__).parent.resolve()
+common_services_dir = (base_dir / '../src').resolve()
+sys.path.insert(0, str(common_services_dir))
+
 from netpol_synth import netpol_synth_main
 
 
