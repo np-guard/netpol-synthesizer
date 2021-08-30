@@ -191,7 +191,7 @@ def netpol_synth_main(args=None):
     """
     parser = argparse.ArgumentParser(description='A generator for K8s Network Policies')
     parser.add_argument('connectivity_file', type=open, help='A json input file describing connectivity')
-    parser.add_argument('--baseline', '-b', type=open, metavar='FILE', action='append',
+    parser.add_argument('--baseline', '-b', type=str, metavar='FILE', action='append',
                         help='A baseline-requirements file')
     parser.add_argument('--output', '-o', type=argparse.FileType('w'), metavar='FILE',
                         help='Output file for NetworkPolicy resources')
