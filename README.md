@@ -9,7 +9,7 @@ and nothing more.
 
 ### Installation:
 ```commandline
-git clone --recurse-submodules git@github.com:np-guard/netpol-synthesizer.git
+git clone --recurse-submodules https://github.com/np-guard/netpol-synthesizer.git
 cd netpol-synthesizer
 python3 -m venv venv
 source venv/bin/activate.csh  # the exact script may depend on the shell you are using
