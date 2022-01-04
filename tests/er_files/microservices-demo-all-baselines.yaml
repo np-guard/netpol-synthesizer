@@ -1,141 +1,9 @@
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: frontend-netpol
-spec:
-  egress:
-  - ports:
-    - port: 9555
-    to:
-    - podSelector:
-        matchLabels:
-          app: adservice
-  - ports:
-    - port: 7070
-    to:
-    - podSelector:
-        matchLabels:
-          app: cartservice
-  - ports:
-    - port: 5050
-    to:
-    - podSelector:
-        matchLabels:
-          app: checkoutservice
-  - ports:
-    - port: 7000
-    to:
-    - podSelector:
-        matchLabels:
-          app: currencyservice
-  - ports:
-    - port: 3550
-    to:
-    - podSelector:
-        matchLabels:
-          app: productcatalogservice
-  - ports:
-    - port: 8080
-    to:
-    - podSelector:
-        matchLabels:
-          app: recommendationservice
-  - ports:
-    - port: 50051
-    to:
-    - podSelector:
-        matchLabels:
-          app: shippingservice
-  - to:
-    - ipBlock:
-        cidr: 172.217.0.0/16
-  - ports:
-    - port: 53
-      protocol: UDP
-    to:
-    - namespaceSelector: {}
-      podSelector:
-        matchLabels:
-          k8s-app: kube-dns
-  ingress:
-  - from:
-    - podSelector:
-        matchLabels:
-          app: loadgenerator
-    ports:
-    - port: 8080
-  - ports:
-    - port: 8080
-  - from:
-    - podSelector:
-        matchLabels:
-          app: loadgenerator
-    ports:
-    - port: 32000
-      protocol: TCP
-  podSelector:
-    matchLabels:
-      app: frontend
-  policyTypes:
-  - Ingress
-  - Egress
----
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  name: adservice-netpol
-spec:
-  egress:
-  - to:
-    - ipBlock:
-        cidr: 172.217.0.0/16
-  - ports:
-    - port: 53
-      protocol: UDP
-    to:
-    - namespaceSelector: {}
-      podSelector:
-        matchLabels:
-          k8s-app: kube-dns
-  ingress:
-  - from:
-    - podSelector:
-        matchLabels:
-          app: frontend
-    ports:
-    - port: 9555
-  - from:
-    - podSelector:
-        matchLabels:
-          app: loadgenerator
-    ports:
-    - port: 32000
-      protocol: TCP
-  podSelector:
-    matchLabels:
-      app: adservice
-  policyTypes:
-  - Ingress
-  - Egress
----
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
   name: checkoutservice-netpol
 spec:
   egress:
-  - ports:
-    - port: 7070
-    to:
-    - podSelector:
-        matchLabels:
-          app: cartservice
-  - ports:
-    - port: 7000
-    to:
-    - podSelector:
-        matchLabels:
-          app: currencyservice
   - ports:
     - port: 8080
     to:
@@ -149,14 +17,23 @@ spec:
         matchLabels:
           app: productcatalogservice
   - ports:
+    - port: 7070
+    to:
+    - podSelector:
+        matchLabels:
+          app: cartservice
+  - ports:
+    - port: 7000
+    to:
+    - podSelector:
+        matchLabels:
+          app: currencyservice
+  - ports:
     - port: 50051
     to:
     - podSelector:
         matchLabels:
           app: shippingservice
-  - to:
-    - ipBlock:
-        cidr: 172.217.0.0/16
   - ports:
     - port: 53
       protocol: UDP
@@ -189,114 +66,9 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: cartservice-netpol
-spec:
-  egress:
-  - ports:
-    - port: 6379
-    to:
-    - podSelector:
-        matchLabels:
-          app: redis-cart
-  - to:
-    - ipBlock:
-        cidr: 172.217.0.0/16
-  - ports:
-    - port: 53
-      protocol: UDP
-    to:
-    - namespaceSelector: {}
-      podSelector:
-        matchLabels:
-          k8s-app: kube-dns
-  ingress:
-  - from:
-    - podSelector:
-        matchLabels:
-          app: checkoutservice
-    ports:
-    - port: 7070
-  - from:
-    - podSelector:
-        matchLabels:
-          app: frontend
-    ports:
-    - port: 7070
-  - from:
-    - podSelector:
-        matchLabels:
-          app: loadgenerator
-    ports:
-    - port: 32000
-      protocol: TCP
-  podSelector:
-    matchLabels:
-      app: cartservice
-  policyTypes:
-  - Ingress
-  - Egress
----
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
-  name: currencyservice-netpol
-spec:
-  egress:
-  - to:
-    - ipBlock:
-        cidr: 172.217.0.0/16
-  - ports:
-    - port: 53
-      protocol: UDP
-    to:
-    - namespaceSelector: {}
-      podSelector:
-        matchLabels:
-          k8s-app: kube-dns
-  ingress:
-  - from:
-    - podSelector:
-        matchLabels:
-          app: checkoutservice
-    ports:
-    - port: 7000
-  - from:
-    - podSelector:
-        matchLabels:
-          app: frontend
-    ports:
-    - port: 7000
-  - from:
-    - podSelector:
-        matchLabels:
-          app: loadgenerator
-    ports:
-    - port: 32000
-      protocol: TCP
-  podSelector:
-    matchLabels:
-      app: currencyservice
-  policyTypes:
-  - Ingress
-  - Egress
----
-apiVersion: networking.k8s.io/v1
-kind: NetworkPolicy
-metadata:
   name: emailservice-netpol
 spec:
-  egress:
-  - to:
-    - ipBlock:
-        cidr: 172.217.0.0/16
-  - ports:
-    - port: 53
-      protocol: UDP
-    to:
-    - namespaceSelector: {}
-      podSelector:
-        matchLabels:
-          k8s-app: kube-dns
+  egress: []
   ingress:
   - from:
     - podSelector:
@@ -314,6 +86,130 @@ spec:
   podSelector:
     matchLabels:
       app: emailservice
+  policyTypes:
+  - Ingress
+  - Egress
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: frontend-netpol
+spec:
+  egress:
+  - ports:
+    - port: 5050
+    to:
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+  - ports:
+    - port: 8080
+    to:
+    - podSelector:
+        matchLabels:
+          app: recommendationservice
+  - ports:
+    - port: 3550
+    to:
+    - podSelector:
+        matchLabels:
+          app: productcatalogservice
+  - ports:
+    - port: 7070
+    to:
+    - podSelector:
+        matchLabels:
+          app: cartservice
+  - ports:
+    - port: 7000
+    to:
+    - podSelector:
+        matchLabels:
+          app: currencyservice
+  - ports:
+    - port: 50051
+    to:
+    - podSelector:
+        matchLabels:
+          app: shippingservice
+  - ports:
+    - port: 9555
+    to:
+    - podSelector:
+        matchLabels:
+          app: adservice
+  - ports:
+    - port: 53
+      protocol: UDP
+    to:
+    - namespaceSelector: {}
+      podSelector:
+        matchLabels:
+          k8s-app: kube-dns
+  ingress:
+  - from:
+    - podSelector: {}
+    ports:
+    - port: 8080
+  - from:
+    - podSelector:
+        matchLabels:
+          app: loadgenerator
+    ports:
+    - port: 8080
+  - ports:
+    - port: 8080
+  - from:
+    - podSelector:
+        matchLabels:
+          app: loadgenerator
+    ports:
+    - port: 32000
+      protocol: TCP
+  podSelector:
+    matchLabels:
+      app: frontend
+  policyTypes:
+  - Ingress
+  - Egress
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: recommendationservice-netpol
+spec:
+  egress:
+  - ports:
+    - port: 3550
+    to:
+    - podSelector:
+        matchLabels:
+          app: productcatalogservice
+  - ports:
+    - port: 53
+      protocol: UDP
+    to:
+    - namespaceSelector: {}
+      podSelector:
+        matchLabels:
+          k8s-app: kube-dns
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    ports:
+    - port: 8080
+  - from:
+    - podSelector:
+        matchLabels:
+          app: loadgenerator
+    ports:
+    - port: 32000
+      protocol: TCP
+  podSelector:
+    matchLabels:
+      app: recommendationservice
   policyTypes:
   - Ingress
   - Egress
@@ -340,9 +236,6 @@ spec:
           operator: NotIn
           values:
           - paymentservice
-  - to:
-    - ipBlock:
-        cidr: 172.217.0.0/16
   - ports:
     - port: 53
       protocol: UDP
@@ -385,18 +278,7 @@ kind: NetworkPolicy
 metadata:
   name: productcatalogservice-netpol
 spec:
-  egress:
-  - to:
-    - ipBlock:
-        cidr: 172.217.0.0/16
-  - ports:
-    - port: 53
-      protocol: UDP
-    to:
-    - namespaceSelector: {}
-      podSelector:
-        matchLabels:
-          k8s-app: kube-dns
+  egress: []
   ingress:
   - from:
     - podSelector:
@@ -407,13 +289,13 @@ spec:
   - from:
     - podSelector:
         matchLabels:
-          app: frontend
+          app: recommendationservice
     ports:
     - port: 3550
   - from:
     - podSelector:
         matchLabels:
-          app: recommendationservice
+          app: frontend
     ports:
     - port: 3550
   - from:
@@ -433,18 +315,15 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: recommendationservice-netpol
+  name: cartservice-netpol
 spec:
   egress:
   - ports:
-    - port: 3550
+    - port: 6379
     to:
     - podSelector:
         matchLabels:
-          app: productcatalogservice
-  - to:
-    - ipBlock:
-        cidr: 172.217.0.0/16
+          app: redis-cart
   - ports:
     - port: 53
       protocol: UDP
@@ -457,9 +336,15 @@ spec:
   - from:
     - podSelector:
         matchLabels:
+          app: checkoutservice
+    ports:
+    - port: 7070
+  - from:
+    - podSelector:
+        matchLabels:
           app: frontend
     ports:
-    - port: 8080
+    - port: 7070
   - from:
     - podSelector:
         matchLabels:
@@ -469,7 +354,73 @@ spec:
       protocol: TCP
   podSelector:
     matchLabels:
-      app: recommendationservice
+      app: cartservice
+  policyTypes:
+  - Ingress
+  - Egress
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: currencyservice-netpol
+spec:
+  egress: []
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+    ports:
+    - port: 7000
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    ports:
+    - port: 7000
+  - from:
+    - podSelector:
+        matchLabels:
+          app: loadgenerator
+    ports:
+    - port: 32000
+      protocol: TCP
+  podSelector:
+    matchLabels:
+      app: currencyservice
+  policyTypes:
+  - Ingress
+  - Egress
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: shippingservice-netpol
+spec:
+  egress: []
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: checkoutservice
+    ports:
+    - port: 50051
+  - from:
+    - podSelector:
+        matchLabels:
+          app: frontend
+    ports:
+    - port: 50051
+  - from:
+    - podSelector:
+        matchLabels:
+          app: loadgenerator
+    ports:
+    - port: 32000
+      protocol: TCP
+  podSelector:
+    matchLabels:
+      app: shippingservice
   policyTypes:
   - Ingress
   - Egress
@@ -479,18 +430,7 @@ kind: NetworkPolicy
 metadata:
   name: redis-cart-netpol
 spec:
-  egress:
-  - to:
-    - ipBlock:
-        cidr: 172.217.0.0/16
-  - ports:
-    - port: 53
-      protocol: UDP
-    to:
-    - namespaceSelector: {}
-      podSelector:
-        matchLabels:
-          k8s-app: kube-dns
+  egress: []
   ingress:
   - from:
     - podSelector:
@@ -515,7 +455,7 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-  name: shippingservice-netpol
+  name: adservice-netpol
 spec:
   egress:
   - to:
@@ -533,15 +473,9 @@ spec:
   - from:
     - podSelector:
         matchLabels:
-          app: checkoutservice
-    ports:
-    - port: 50051
-  - from:
-    - podSelector:
-        matchLabels:
           app: frontend
     ports:
-    - port: 50051
+    - port: 9555
   - from:
     - podSelector:
         matchLabels:
@@ -551,7 +485,7 @@ spec:
       protocol: TCP
   podSelector:
     matchLabels:
-      app: shippingservice
+      app: adservice
   policyTypes:
   - Ingress
   - Egress
