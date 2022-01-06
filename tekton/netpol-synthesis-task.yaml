@@ -1,0 +1,56 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: k8s-netpol-synthesize
+  labels:
+    app.kubernetes.io/version: "0.1"
+  annotations:
+    tekton.dev/categories: "Kubernetes, Networking, Security"
+    tekton.dev/pipelines.minVersion: "0.17.0"
+    tekton.dev/tags: "Kubernetes, NetworkPolicy"
+    tekton.dev/platforms: "linux/amd64"
+    tekton.dev/displayName: "K8s NetworkPolicy Auto-Synthesis"
+spec:
+  description: >-
+    A task to Automatically synthesize K8s NetworkPolicies, permitting only the connections your application requires and nothing more
+  params:
+    - name: corporate-policies
+      type: array
+      description: A list of corporate policy files to check against (either as GitHub URLs or as paths under workspace)
+    - name: output-dir
+      type: string
+      description: The directory under 'source' workspace, into which the YAML file with the synthesized NetworkPolicies will be written
+      default: netpol-synth-output-dir
+  workspaces:
+    - name: source
+  results:
+    - name: synth-netpol-file
+      description: The path to the generated file under 'sources' workspace, which contains the synthesized NetworkPolicies
+  steps:
+    - name: make-result-dir # This step prepares the output directory, as netpol-synth runs without root permissions.
+      image: ubuntu
+      workingDir: $(workspaces.source.path)
+      script: |
+        #!/bin/sh
+        mkdir -p $(params.output-dir)
+        chmod a+w $(params.output-dir)
+    - name: analyze-repo
+      image: ghcr.io/np-guard/net-top-analyzer@sha256:bd40a99fdbd293040a66166abd978bb806e17bf991998ba83fe06bac77e63a06
+      workingDir: $(workspaces.source.path)
+      args: ["-dirpath", ".", "-commitid", "1", "-giturl", "https", "-gitbranch", "master", "-outputfile", "$(params.output-dir)/app-net-top.json"]
+    - name: synthesize-netpols
+      image: ghcr.io/np-guard/netpol-synth@sha256:148e371fb40fd24ea924c1c32c969481f27808171dd901dd60141bd9f2f87b76
+      workingDir: $(workspaces.source.path)
+      args: ["$(params.corporate-policies[*])"]
+      script: |
+        #!/bin/sh
+        for policy in "$@"
+        do
+          POLICIES_WITH_B="-b $policy $POLICIES_WITH_B"
+        done
+
+        OUTFILE=$(params.output-dir)/netpols.yaml
+
+        python /netpol-synthesizer/src/netpol_synth.py $(params.output-dir)/app-net-top.json -o $OUTFILE ${POLICIES_WITH_B}
+
+        printf '%s' "${OUTFILE}" | tee $(results.synth-netpol-file.path)

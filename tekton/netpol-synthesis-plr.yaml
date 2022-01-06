@@ -1,0 +1,85 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  generateName: k8s-netpol-synth-test-pipeline-run-
+spec:
+  pipelineSpec:
+    workspaces:
+    - name: shared-workspace
+    - name: ssh-creds
+    tasks:
+    - name: fetch-repository
+      taskRef:
+        name: git-clone
+      workspaces:
+      - name: output
+        workspace: shared-workspace
+      - name: ssh-directory
+        workspace: ssh-creds
+      params:
+      - name: url
+        value: git@github.com:np-guard/online-boutique.git
+    - name: synthesize-netpols
+      taskRef:
+        name: k8s-netpol-synthesize
+      runAfter:
+      - fetch-repository
+      workspaces:
+      - name: source
+        workspace: shared-workspace
+      params:
+      - name: corporate-policies
+        value:
+        - https://github.com/np-guard/baseline-rules/blob/master/examples/restrict_access_to_payment.yaml
+        - https://github.com/np-guard/baseline-rules/blob/master/examples/ciso_denied_ports.yaml
+    - name: commit-to-branch
+      runAfter:
+      - synthesize-netpols
+      taskRef:
+        name: git-cli
+      workspaces:
+      - name: source
+        workspace: shared-workspace
+      - name: ssh-directory
+        workspace: ssh-creds
+      params:
+      - name: GIT_USER_NAME
+        value: Tekton User
+      - name: GIT_USER_EMAIL
+        value: tekton_user@tekton.dev
+      - name: GIT_SCRIPT
+        value: |
+          export branch_name=set_netpols_tekton
+          git checkout -b $branch_name
+          git add $(tasks.synthesize-netpols.results.synth-netpol-file)
+          git commit -m"adding network policies to enforce minimal connectivity"
+          git push --set-upstream origin $branch_name
+    - name: open-pr
+      taskRef:
+        name: github-open-pr
+      runAfter:
+      - commit-to-branch
+      params:
+      - name: REPO_FULL_NAME
+        value: np-guard/online-boutique
+      - name: HEAD
+        value: set_netpols_tekton
+      - name: BASE
+        value: master
+      - name: TITLE
+        value: Adding network policies to enforce minimal connectivity
+      - name: BODY
+        value: Automatically generated NetworkPolicies
+  workspaces:
+  - name: ssh-creds
+    # This secret can be created by running: kubectl create secret generic my-ssh-credentials --from-file=~/.ssh/known_hosts --from-file=~/.ssh/id_rsa
+    secret:
+      secretName: my-ssh-credentials
+  - name: shared-workspace
+    volumeClaimTemplate:
+      spec:
+        accessModes:
+          - ReadWriteOnce
+        resources:
+          requests:
+            storage: 10Mi
