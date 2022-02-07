@@ -30,10 +30,13 @@ spec:
     - name: make-result-dir # This step prepares the output directory, as netpol-synth runs without root permissions.
       image: ubuntu
       workingDir: $(workspaces.source.path)
+      env:
+      - name: PARAMS_OUTPUT_DIR
+        value: $(params.output-dir)
       script: |
         #!/bin/sh
-        mkdir -p $(params.output-dir)
-        chmod a+w $(params.output-dir)
+        mkdir -p "$PARAMS_OUTPUT_DIR"
+        chmod a+w "$PARAMS_OUTPUT_DIR"
     - name: analyze-repo
       image: ghcr.io/np-guard/net-top-analyzer@sha256:bd40a99fdbd293040a66166abd978bb806e17bf991998ba83fe06bac77e63a06
       workingDir: $(workspaces.source.path)
@@ -42,6 +45,9 @@ spec:
       image: ghcr.io/np-guard/netpol-synth@sha256:148e371fb40fd24ea924c1c32c969481f27808171dd901dd60141bd9f2f87b76
       workingDir: $(workspaces.source.path)
       args: ["$(params.corporate-policies[*])"]
+      env:
+      - name: PARAMS_OUTPUT_DIR
+        value: $(params.output-dir)
       script: |
         #!/bin/sh
         for policy in "$@"
@@ -49,8 +55,8 @@ spec:
           POLICIES_WITH_B="-b $policy $POLICIES_WITH_B"
         done
 
-        OUTFILE=$(params.output-dir)/netpols.yaml
+        OUTFILE="$PARAMS_OUTPUT_DIR/netpols.yaml"
 
-        python /netpol-synthesizer/src/netpol_synth.py $(params.output-dir)/app-net-top.json -o $OUTFILE ${POLICIES_WITH_B}
+        python /netpol-synthesizer/src/netpol_synth.py "$PARAMS_OUTPUT_DIR/app-net-top.json" -o "$OUTFILE" ${POLICIES_WITH_B}
 
         printf '%s' "${OUTFILE}" | tee $(results.synth-netpol-file.path)
