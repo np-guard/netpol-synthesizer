@@ -38,6 +38,7 @@ class DeploymentLinks:
     namespace: str = ''
     selectors: Optional[dict] = None
     labels: dict = field(default_factory=dict)
+    service_account_name: str = 'default'
     ingress_conns: list = field(default_factory=list)
     egress_conns: list = field(default_factory=list)
 
@@ -80,8 +81,8 @@ class NetpolSynthesizer:
                           f'is disallowed by baseline rule {violated_baseline_rule}')
                 else:
                     if src_deploy not in [internet_src, namespace_src]:
-                        self.deployments[src_deploy.name].egress_conns.append((tgt_deploy.selectors, port_list))
-                    self.deployments[tgt_deploy.name].ingress_conns.append((src_deploy.selectors, port_list))
+                        self.deployments[src_deploy.name].egress_conns.append((tgt_deploy, port_list))
+                    self.deployments[tgt_deploy.name].ingress_conns.append((src_deploy, port_list))
 
     def _find_or_add_deployment(self, resource):
         """
@@ -98,7 +99,8 @@ class NetpolSynthesizer:
             namespace = resource.get('namespace', '')
             sel = self._selector_array_to_pod_selector(resource.get('selectors', []))
             labels = resource.get('labels', {})
-            self.deployments[name] = DeploymentLinks(name, namespace, sel, labels)
+            sa_name = resource.get('serviceaccountname', 'default')
+            self.deployments[name] = DeploymentLinks(name, namespace, sel, labels, sa_name)
         return self.deployments[name]
 
     def _allowed_by_baseline(self, source_labels, target_labels, port_list):
@@ -133,14 +135,17 @@ class NetpolSynthesizer:
                     deploy.ingress_conns.append((rule.sources_as_netpol_peer(), rule.get_port_array()))
 
     @staticmethod
-    def _xgress_conns_to_rules(conns, is_ingress):
+    def _xgress_conns_to_network_policy_rules(conns, is_ingress):
+        # TODO: peer type in connection has multiple options currently
+        # a conn is a tuple of (DeploymentLinks, port list) or (dict, ports list)
         res_rules = []
         seen_rules = set()
         for conn in conns:
             rule = {'ports': conn[1]} if conn[1] else {}
-            if conn[0]:
+            selectors = conn[0].selectors if isinstance(conn[0], DeploymentLinks) else conn[0]
+            if selectors:
                 selector_key = 'from' if is_ingress else 'to'
-                rule[selector_key] = [conn[0]]
+                rule[selector_key] = [selectors]
             rule_yaml = yaml.dump(rule)
             if rule_yaml in seen_rules:
                 continue
@@ -154,13 +159,43 @@ class NetpolSynthesizer:
 
         return res_rules
 
-    def synthesize(self, output_file):
-        """
-        Generates NetworkPolicies in yaml format based on the analysis done in the ctor.
-        If output file is specified, the output is dumped into the file. Otherwise, stdout is used
-        :param output_file: A file opened for writing
-        :return: None
-        """
+    @staticmethod
+    def _ingress_conns_to_auth_policy_rules(conns):
+        # a conn is a tuple of (DeploymentLinks, port list)
+        res_rules = []
+        seen_rules = set()
+        for conn in conns:
+            # TODO: namespace handling
+            # TODO: handle empty src case
+            # TODO: currently not supporting connections from baseline rules
+            src_list = {'principals': ["cluster.local/ns/default/sa/" + conn[0].service_account_name]}
+            ports_list = {'ports': [str(port['port']) for port in conn[1]]}
+            from_list = [{'source': src_list}]
+            to_list = [{'operation': ports_list}]
+            rule = {'from': from_list, 'to': to_list}
+            rule_yaml = yaml.dump(rule)
+            if rule_yaml in seen_rules:
+                continue
+            seen_rules.add(rule_yaml)
+            res_rules.append(rule)
+        return res_rules
+
+    def _synthesize_istio_authorization_policies(self):
+        authpolicies = []
+        for deployment in self.deployments.values():
+            metadata = {'name': deployment.name + '-authpol'}
+            if deployment.namespace:
+                metadata['namespace'] = deployment.namespace
+            spec = {'selector': deployment.selectors['podSelector'],
+                    'rules': self._ingress_conns_to_auth_policy_rules(deployment.ingress_conns)}
+            authpol = {'apiVersion': 'security.istio.io/v1beta1',
+                       'kind': 'AuthorizationPolicy',
+                       'metadata': metadata,
+                       'spec': spec}
+            authpolicies.append(authpol)
+        return authpolicies
+
+    def _synthesize_k8s_network_policies(self):
         netpols = []
         for deployment in self.deployments.values():
             metadata = {'name': deployment.name + '-netpol'}
@@ -168,19 +203,29 @@ class NetpolSynthesizer:
                 metadata['namespace'] = deployment.namespace
             spec = {'podSelector': deployment.selectors['podSelector'],
                     'policyTypes': ['Ingress', 'Egress'],
-                    'ingress': self._xgress_conns_to_rules(deployment.ingress_conns, True),
-                    'egress': self._xgress_conns_to_rules(deployment.egress_conns, False)}
+                    'ingress': self._xgress_conns_to_network_policy_rules(deployment.ingress_conns, True),
+                    'egress': self._xgress_conns_to_network_policy_rules(deployment.egress_conns, False)}
             netpol = {'apiVersion': 'networking.k8s.io/v1',
                       'kind': 'NetworkPolicy',
                       'metadata': metadata,
                       'spec': spec}
             netpols.append(netpol)
+        return netpols
 
+    def synthesize(self, output_file, policy_type):
+        """
+        Generates NetworkPolicies/AuthorizationPolicies in yaml format based on the analysis done in the ctor.
+        If output file is specified, the output is dumped into the file. Otherwise, stdout is used
+        :param output_file: A file opened for writing
+        :param policy_type: the required policy type (k8s/istio)
+        :return: None
+        """
+        policy_list = self._synthesize_istio_authorization_policies() if policy_type == 'istio' else self._synthesize_k8s_network_policies()
         if output_file:
-            yaml.dump_all(netpols, output_file, Dumper=NoAliasDumper)
+            yaml.dump_all(policy_list, output_file, Dumper=NoAliasDumper)
             print(f'\nNetwork Policies were successfully written to {output_file.name}')
         else:
-            print(yaml.dump_all(netpols))
+            print(yaml.dump_all(policy_list))
 
 
 def netpol_synth_main(args=None):
@@ -189,15 +234,16 @@ def netpol_synth_main(args=None):
     :param args: Commandline arguments
     :return: None
     """
-    parser = argparse.ArgumentParser(description='A generator for K8s Network Policies')
+    parser = argparse.ArgumentParser(description='A generator for micro-segmentation policies: K8s Network Policies / Istio Authorization Policies')
     parser.add_argument('connectivity_file', type=open, help='A json input file describing connectivity')
     parser.add_argument('--baseline', '-b', type=str, metavar='FILE', action='append',
                         help='A baseline-requirements file')
     parser.add_argument('--output', '-o', type=argparse.FileType('w'), metavar='FILE',
                         help='Output file for NetworkPolicy resources')
+    parser.add_argument('--policy_type', choices=['k8s', 'istio'], help='Choose policy type to generate (k8s/istio)', default='k8s')
     args = parser.parse_args(args)
 
-    NetpolSynthesizer(args.connectivity_file, args.baseline).synthesize(args.output)
+    NetpolSynthesizer(args.connectivity_file, args.baseline).synthesize(args.output, args.policy_type)
 
 
 if __name__ == "__main__":

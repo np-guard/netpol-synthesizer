@@ -1,0 +1,1271 @@
+[
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "frontend",
+                "selectors": [
+                    "app:frontend"
+                ],
+                "labels": {
+                    "app": "frontend"
+                },
+                "serviceaccountname": "frontend",
+                "filepath": "\\frontend.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/frontend:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 8080,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "currencyservice:7000",
+                    "cartservice:7070",
+                    "recommendationservice:8080",
+                    "shippingservice:50051",
+                    "checkoutservice:5050",
+                    "adservice:9555"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "adservice",
+                "selectors": [
+                    "app:adservice"
+                ],
+                "labels": {
+                    "app": "adservice"
+                },
+                "serviceaccountname": "adservice",
+                "filepath": "\\adservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/adservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 9555,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "adservice",
+                "namespace": "",
+                "selectors": [
+                    "app:adservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\adservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 9555,
+                        "target_port": 9555
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "checkoutservice",
+                "selectors": [
+                    "app:checkoutservice"
+                ],
+                "labels": {
+                    "app": "checkoutservice"
+                },
+                "serviceaccountname": "checkoutservice",
+                "filepath": "\\checkoutservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/checkoutservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 5050,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "shippingservice:50051",
+                    "paymentservice:50051",
+                    "emailservice:5000",
+                    "currencyservice:7000",
+                    "cartservice:7070"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "cartservice",
+                "selectors": [
+                    "app:cartservice"
+                ],
+                "labels": {
+                    "app": "cartservice"
+                },
+                "serviceaccountname": "cartservice",
+                "filepath": "\\cartservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/cartservice:1bb10bf"
+                },
+                "network": [
+                    {
+                        "container_url": 7070,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "cartservice",
+                "namespace": "",
+                "selectors": [
+                    "app:cartservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\cartservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 7070,
+                        "target_port": 7070
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "frontend",
+                "selectors": [
+                    "app:frontend"
+                ],
+                "labels": {
+                    "app": "frontend"
+                },
+                "serviceaccountname": "frontend",
+                "filepath": "\\frontend.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/frontend:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 8080,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "currencyservice:7000",
+                    "cartservice:7070",
+                    "recommendationservice:8080",
+                    "shippingservice:50051",
+                    "checkoutservice:5050",
+                    "adservice:9555"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "cartservice",
+                "selectors": [
+                    "app:cartservice"
+                ],
+                "labels": {
+                    "app": "cartservice"
+                },
+                "serviceaccountname": "cartservice",
+                "filepath": "\\cartservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/cartservice:1bb10bf"
+                },
+                "network": [
+                    {
+                        "container_url": 7070,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "cartservice",
+                "namespace": "",
+                "selectors": [
+                    "app:cartservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\cartservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 7070,
+                        "target_port": 7070
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "frontend",
+                "selectors": [
+                    "app:frontend"
+                ],
+                "labels": {
+                    "app": "frontend"
+                },
+                "serviceaccountname": "frontend",
+                "filepath": "\\frontend.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/frontend:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 8080,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "currencyservice:7000",
+                    "cartservice:7070",
+                    "recommendationservice:8080",
+                    "shippingservice:50051",
+                    "checkoutservice:5050",
+                    "adservice:9555"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "checkoutservice",
+                "selectors": [
+                    "app:checkoutservice"
+                ],
+                "labels": {
+                    "app": "checkoutservice"
+                },
+                "serviceaccountname": "checkoutservice",
+                "filepath": "\\checkoutservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/checkoutservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 5050,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "shippingservice:50051",
+                    "paymentservice:50051",
+                    "emailservice:5000",
+                    "currencyservice:7000",
+                    "cartservice:7070"
+                ]
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "checkoutservice",
+                "namespace": "",
+                "selectors": [
+                    "app:checkoutservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\checkoutservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 5050,
+                        "target_port": 5050
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "checkoutservice",
+                "selectors": [
+                    "app:checkoutservice"
+                ],
+                "labels": {
+                    "app": "checkoutservice"
+                },
+                "serviceaccountname": "checkoutservice",
+                "filepath": "\\checkoutservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/checkoutservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 5050,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "shippingservice:50051",
+                    "paymentservice:50051",
+                    "emailservice:5000",
+                    "currencyservice:7000",
+                    "cartservice:7070"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "currencyservice",
+                "selectors": [
+                    "app:currencyservice"
+                ],
+                "labels": {
+                    "app": "currencyservice"
+                },
+                "serviceaccountname": "currencyservice",
+                "filepath": "\\currencyservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/currencyservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 7000,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "currencyservice",
+                "namespace": "",
+                "selectors": [
+                    "app:currencyservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\currencyservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 7000,
+                        "target_port": 7000
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "frontend",
+                "selectors": [
+                    "app:frontend"
+                ],
+                "labels": {
+                    "app": "frontend"
+                },
+                "serviceaccountname": "frontend",
+                "filepath": "\\frontend.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/frontend:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 8080,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "currencyservice:7000",
+                    "cartservice:7070",
+                    "recommendationservice:8080",
+                    "shippingservice:50051",
+                    "checkoutservice:5050",
+                    "adservice:9555"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "currencyservice",
+                "selectors": [
+                    "app:currencyservice"
+                ],
+                "labels": {
+                    "app": "currencyservice"
+                },
+                "serviceaccountname": "currencyservice",
+                "filepath": "\\currencyservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/currencyservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 7000,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "currencyservice",
+                "namespace": "",
+                "selectors": [
+                    "app:currencyservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\currencyservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 7000,
+                        "target_port": 7000
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "checkoutservice",
+                "selectors": [
+                    "app:checkoutservice"
+                ],
+                "labels": {
+                    "app": "checkoutservice"
+                },
+                "serviceaccountname": "checkoutservice",
+                "filepath": "\\checkoutservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/checkoutservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 5050,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "shippingservice:50051",
+                    "paymentservice:50051",
+                    "emailservice:5000",
+                    "currencyservice:7000",
+                    "cartservice:7070"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "emailservice",
+                "selectors": [
+                    "app:emailservice"
+                ],
+                "labels": {
+                    "app": "emailservice"
+                },
+                "serviceaccountname": "emailservice",
+                "filepath": "\\emailservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/emailservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 8080,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "emailservice",
+                "namespace": "",
+                "selectors": [
+                    "app:emailservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\emailservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 5000,
+                        "target_port": 8080
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "loadgenerator",
+                "selectors": [
+                    "app:loadgenerator"
+                ],
+                "labels": {
+                    "app": "loadgenerator"
+                },
+                "serviceaccountname": "loadgenerator",
+                "filepath": "\\loadgenerator.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/loadgenerator:v0.3.6"
+                },
+                "network": null,
+                "Envs": [
+                    "frontend:80"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "frontend",
+                "selectors": [
+                    "app:frontend"
+                ],
+                "labels": {
+                    "app": "frontend"
+                },
+                "serviceaccountname": "frontend",
+                "filepath": "\\frontend.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/frontend:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 8080,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "currencyservice:7000",
+                    "cartservice:7070",
+                    "recommendationservice:8080",
+                    "shippingservice:50051",
+                    "checkoutservice:5050",
+                    "adservice:9555"
+                ]
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "frontend",
+                "namespace": "",
+                "selectors": [
+                    "app:frontend"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\frontend.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 80,
+                        "target_port": 8080
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "checkoutservice",
+                "selectors": [
+                    "app:checkoutservice"
+                ],
+                "labels": {
+                    "app": "checkoutservice"
+                },
+                "serviceaccountname": "checkoutservice",
+                "filepath": "\\checkoutservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/checkoutservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 5050,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "shippingservice:50051",
+                    "paymentservice:50051",
+                    "emailservice:5000",
+                    "currencyservice:7000",
+                    "cartservice:7070"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "paymentservice",
+                "selectors": [
+                    "app:paymentservice"
+                ],
+                "labels": {
+                    "app": "paymentservice"
+                },
+                "serviceaccountname": "paymentservice",
+                "filepath": "\\paymentservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/paymentservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 50051,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "paymentservice",
+                "namespace": "",
+                "selectors": [
+                    "app:paymentservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\paymentservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 50051,
+                        "target_port": 50051
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "checkoutservice",
+                "selectors": [
+                    "app:checkoutservice"
+                ],
+                "labels": {
+                    "app": "checkoutservice"
+                },
+                "serviceaccountname": "checkoutservice",
+                "filepath": "\\checkoutservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/checkoutservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 5050,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "shippingservice:50051",
+                    "paymentservice:50051",
+                    "emailservice:5000",
+                    "currencyservice:7000",
+                    "cartservice:7070"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "productcatalogservice",
+                "selectors": [
+                    "app:productcatalogservice"
+                ],
+                "labels": {
+                    "app": "productcatalogservice"
+                },
+                "serviceaccountname": "productcatalogservice",
+                "filepath": "\\productcatalogservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/productcatalogservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 3550,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "productcatalogservice",
+                "namespace": "",
+                "selectors": [
+                    "app:productcatalogservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\productcatalogservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 3550,
+                        "target_port": 3550
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "frontend",
+                "selectors": [
+                    "app:frontend"
+                ],
+                "labels": {
+                    "app": "frontend"
+                },
+                "serviceaccountname": "frontend",
+                "filepath": "\\frontend.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/frontend:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 8080,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "currencyservice:7000",
+                    "cartservice:7070",
+                    "recommendationservice:8080",
+                    "shippingservice:50051",
+                    "checkoutservice:5050",
+                    "adservice:9555"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "productcatalogservice",
+                "selectors": [
+                    "app:productcatalogservice"
+                ],
+                "labels": {
+                    "app": "productcatalogservice"
+                },
+                "serviceaccountname": "productcatalogservice",
+                "filepath": "\\productcatalogservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/productcatalogservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 3550,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "productcatalogservice",
+                "namespace": "",
+                "selectors": [
+                    "app:productcatalogservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\productcatalogservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 3550,
+                        "target_port": 3550
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "recommendationservice",
+                "selectors": [
+                    "app:recommendationservice"
+                ],
+                "labels": {
+                    "app": "recommendationservice"
+                },
+                "serviceaccountname": "recommendationservice",
+                "filepath": "\\recommendationservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/recommendationservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 8080,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "productcatalogservice",
+                "selectors": [
+                    "app:productcatalogservice"
+                ],
+                "labels": {
+                    "app": "productcatalogservice"
+                },
+                "serviceaccountname": "productcatalogservice",
+                "filepath": "\\productcatalogservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/productcatalogservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 3550,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "productcatalogservice",
+                "namespace": "",
+                "selectors": [
+                    "app:productcatalogservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\productcatalogservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 3550,
+                        "target_port": 3550
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "frontend",
+                "selectors": [
+                    "app:frontend"
+                ],
+                "labels": {
+                    "app": "frontend"
+                },
+                "serviceaccountname": "frontend",
+                "filepath": "\\frontend.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/frontend:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 8080,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "currencyservice:7000",
+                    "cartservice:7070",
+                    "recommendationservice:8080",
+                    "shippingservice:50051",
+                    "checkoutservice:5050",
+                    "adservice:9555"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "recommendationservice",
+                "selectors": [
+                    "app:recommendationservice"
+                ],
+                "labels": {
+                    "app": "recommendationservice"
+                },
+                "serviceaccountname": "recommendationservice",
+                "filepath": "\\recommendationservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/recommendationservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 8080,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550"
+                ]
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "recommendationservice",
+                "namespace": "",
+                "selectors": [
+                    "app:recommendationservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\recommendationservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "checkoutservice",
+                "selectors": [
+                    "app:checkoutservice"
+                ],
+                "labels": {
+                    "app": "checkoutservice"
+                },
+                "serviceaccountname": "checkoutservice",
+                "filepath": "\\checkoutservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/checkoutservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 5050,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "shippingservice:50051",
+                    "paymentservice:50051",
+                    "emailservice:5000",
+                    "currencyservice:7000",
+                    "cartservice:7070"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "shippingservice",
+                "selectors": [
+                    "app:shippingservice"
+                ],
+                "labels": {
+                    "app": "shippingservice"
+                },
+                "serviceaccountname": "shippingservice",
+                "filepath": "\\shippingservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/shippingservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 50051,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "shippingservice",
+                "namespace": "",
+                "selectors": [
+                    "app:shippingservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\shippingservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 50051,
+                        "target_port": 50051
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "frontend",
+                "selectors": [
+                    "app:frontend"
+                ],
+                "labels": {
+                    "app": "frontend"
+                },
+                "serviceaccountname": "frontend",
+                "filepath": "\\frontend.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/frontend:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 8080,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": [
+                    "productcatalogservice:3550",
+                    "currencyservice:7000",
+                    "cartservice:7070",
+                    "recommendationservice:8080",
+                    "shippingservice:50051",
+                    "checkoutservice:5050",
+                    "adservice:9555"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "Resource": {
+                "name": "shippingservice",
+                "selectors": [
+                    "app:shippingservice"
+                ],
+                "labels": {
+                    "app": "shippingservice"
+                },
+                "serviceaccountname": "shippingservice",
+                "filepath": "\\shippingservice.yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "us-east4-docker.pkg.dev/mygke-200/containers/boutique/shippingservice:v0.3.6"
+                },
+                "network": [
+                    {
+                        "container_url": 50051,
+                        "protocol": ""
+                    }
+                ],
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "https://github.com/nadgowdas/microservices-demo",
+            "git_branch": "matser",
+            "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
+            "resource": {
+                "name": "shippingservice",
+                "namespace": "",
+                "selectors": [
+                    "app:shippingservice"
+                ],
+                "type": "ClusterIP",
+                "filepath": "\\shippingservice.yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 50051,
+                        "target_port": 50051
+                    }
+                ]
+            }
+        }
+    }
+]

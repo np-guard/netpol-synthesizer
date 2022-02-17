@@ -32,5 +32,10 @@
     "name": "akmebank-allow-https-baseline",
     "inputLinks": "akmebank-links.json",
     "args": ["-b", "../baseline-rules/examples/allow_https_egress.yaml"]
+  },
+  {
+    "name": "online-boutique-with-sa-no-baseline-istio-auth-policies",
+    "inputLinks": "online-boutique-with-sa.json",
+    "args": ["--policy_type=istio"]
   }
 ]
