@@ -38,7 +38,7 @@ class DeploymentLinks:
     namespace: str = ''
     selectors: Optional[dict] = None
     labels: dict = field(default_factory=dict)
-    service_account_name: str = 'default'
+    service_account_name: str = ''
     ingress_conns: list = field(default_factory=list)
     egress_conns: list = field(default_factory=list)
 
@@ -67,9 +67,10 @@ class NetpolSynthesizer:
                 continue
             for connection in element:
                 src_deploy = self._find_or_add_deployment(connection['source']['Resource'])
+                used_ports_src = self._get_used_ports(connection['source']['Resource'])
                 tgt_deploy = self._find_or_add_deployment(connection['target']['Resource'])
                 links = connection['link']['resource']
-                port_list = self._links_to_port_list(links.get('network'))
+                port_list = self._links_to_port_list(links.get('network'), used_ports_src)
                 if links.get('type') == 'LoadBalancer':
                     src_deploy = internet_src  # A Service of type LoadBalancer exposes the target to the internet
                 elif not src_deploy.name:
@@ -103,6 +104,12 @@ class NetpolSynthesizer:
             self.deployments[name] = DeploymentLinks(name, namespace, sel, labels, sa_name)
         return self.deployments[name]
 
+    def _get_used_ports(self, resource):
+        res = resource.get('UsedPorts', [])
+        if res is None:
+            res = []
+        return res
+
     def _allowed_by_baseline(self, source_labels, target_labels, port_list):
         for rule in self.baseline_rules:
             if rule.action == BaselineRuleAction.deny and \
@@ -121,7 +128,10 @@ class NetpolSynthesizer:
         return {'podSelector': {'matchLabels': res}}
 
     @staticmethod
-    def _links_to_port_list(links):
+    def _links_to_port_list(links, used_ports):
+        if used_ports:
+            # refer only to relevant ports (not all service ports are in use)
+            return [{'port': link.get('target_port')} for link in links if link.get('port') in used_ports]
         return [{'port': link.get('target_port')} for link in links]
 
     def _add_must_allow_connections(self):
@@ -165,14 +175,17 @@ class NetpolSynthesizer:
         res_rules = []
         seen_rules = set()
         for conn in conns:
-            # TODO: namespace handling
-            # TODO: handle empty src case
+            rule = {}
             # TODO: currently not supporting connections from baseline rules
-            src_list = {'principals': ["cluster.local/ns/default/sa/" + conn[0].service_account_name]}
+            assert isinstance(conn[0], DeploymentLinks)
+            if conn[0].service_account_name != '':
+                ns = conn[0].namespace or 'default'
+                src_list = {'principals': [f"cluster.local/ns/{ns}/sa/{conn[0].service_account_name}"]}
+                from_list = [{'source': src_list}]
+                rule['from'] = from_list
             ports_list = {'ports': [str(port['port']) for port in conn[1]]}
-            from_list = [{'source': src_list}]
             to_list = [{'operation': ports_list}]
-            rule = {'from': from_list, 'to': to_list}
+            rule['to'] = to_list
             rule_yaml = yaml.dump(rule)
             if rule_yaml in seen_rules:
                 continue
