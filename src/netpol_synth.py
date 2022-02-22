@@ -104,7 +104,8 @@ class NetpolSynthesizer:
             self.deployments[name] = DeploymentLinks(name, namespace, sel, labels, sa_name)
         return self.deployments[name]
 
-    def _get_used_ports(self, resource):
+    @staticmethod
+    def _get_used_ports(resource):
         res = resource.get('UsedPorts', [])
         if res is None:
             res = []
@@ -152,6 +153,7 @@ class NetpolSynthesizer:
         seen_rules = set()
         for conn in conns:
             rule = {'ports': conn[1]} if conn[1] else {}
+            # {'podSelector': {'matchLabels': {'app': 'loadgenerator'}}}
             selectors = conn[0].selectors if isinstance(conn[0], DeploymentLinks) else conn[0]
             if selectors:
                 selector_key = 'from' if is_ingress else 'to'
@@ -169,18 +171,34 @@ class NetpolSynthesizer:
 
         return res_rules
 
-    @staticmethod
-    def _ingress_conns_to_auth_policy_rules(conns):
+    def _find_deployments_from_pod_selector(self, selector_dict):
+        res = []
+        for deploy in self.deployments.values():
+            labels = deploy.labels
+            selector_labels = selector_dict['podSelector']['matchLabels']
+            if all(labels.get(k, None) == v for k, v in selector_labels.items()):
+                res.append(deploy)
+        return res
+
+    def _ingress_conns_to_auth_policy_rules(self, conns):
         # a conn is a tuple of (DeploymentLinks, port list)
         res_rules = []
         seen_rules = set()
         for conn in conns:
             rule = {}
-            # TODO: currently not supporting connections from baseline rules
-            assert isinstance(conn[0], DeploymentLinks)
-            if conn[0].service_account_name != '':
-                ns = conn[0].namespace or 'default'
-                src_list = {'principals': [f"cluster.local/ns/{ns}/sa/{conn[0].service_account_name}"]}
+            # TODO: validate support for connections from baseline rules
+            if not isinstance(conn[0], DeploymentLinks):  # connection from baseline rule with peer as selector
+                src_deployments = self._find_deployments_from_pod_selector(conn[0])
+            else:
+                src_deployments = [conn[0]]
+            #assert isinstance(conn[0], DeploymentLinks)
+            principals_list = []
+            for src_deployment in src_deployments:
+                if src_deployment.service_account_name != '':
+                    ns = src_deployment.namespace or 'default'
+                    principals_list.append(f"cluster.local/ns/{ns}/sa/{src_deployment.service_account_name}")
+            if principals_list:
+                src_list = {'principals': principals_list}
                 from_list = [{'source': src_list}]
                 rule['from'] = from_list
             ports_list = {'ports': [str(port['port']) for port in conn[1]]}

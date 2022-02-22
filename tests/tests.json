@@ -37,5 +37,15 @@
     "name": "online-boutique-with-sa-no-baseline-istio-auth-policies",
     "inputLinks": "online-boutique-with-sa.json",
     "args": ["--policy_type=istio"]
+  },
+  {
+    "name": "online-boutique-with-sa-istio-auth-policies-allow-loadgen-baseline",
+    "inputLinks": "online-boutique-with-sa.json",
+    "args": ["--policy_type=istio", "-b", "../baseline-rules/examples/allow_load_generation.yaml"]
+  },
+  {
+    "name": "online-boutique-with-sa-istio-auth-policies-restrict_access_to_payment-baseline",
+    "inputLinks": "online-boutique-with-sa.json",
+    "args": ["--policy_type=istio", "-b", "../baseline-rules/examples/restrict_access_to_payment.yaml"]
   }
 ]
