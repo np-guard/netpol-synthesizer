@@ -3,6 +3,7 @@ kind: AuthorizationPolicy
 metadata:
   name: frontend-authpol
 spec:
+  action: ALLOW
   rules:
   - from:
     - source:
@@ -29,6 +30,7 @@ kind: AuthorizationPolicy
 metadata:
   name: adservice-authpol
 spec:
+  action: ALLOW
   rules:
   - from:
     - source:
@@ -55,6 +57,7 @@ kind: AuthorizationPolicy
 metadata:
   name: checkoutservice-authpol
 spec:
+  action: ALLOW
   rules:
   - from:
     - source:
@@ -81,6 +84,7 @@ kind: AuthorizationPolicy
 metadata:
   name: cartservice-authpol
 spec:
+  action: ALLOW
   rules:
   - from:
     - source:
@@ -115,6 +119,7 @@ kind: AuthorizationPolicy
 metadata:
   name: currencyservice-authpol
 spec:
+  action: ALLOW
   rules:
   - from:
     - source:
@@ -149,6 +154,7 @@ kind: AuthorizationPolicy
 metadata:
   name: emailservice-authpol
 spec:
+  action: ALLOW
   rules:
   - from:
     - source:
@@ -175,6 +181,7 @@ kind: AuthorizationPolicy
 metadata:
   name: loadgenerator-authpol
 spec:
+  action: ALLOW
   rules:
   - from:
     - source:
@@ -193,6 +200,7 @@ kind: AuthorizationPolicy
 metadata:
   name: paymentservice-authpol
 spec:
+  action: ALLOW
   rules:
   - from:
     - source:
@@ -211,6 +219,7 @@ kind: AuthorizationPolicy
 metadata:
   name: productcatalogservice-authpol
 spec:
+  action: ALLOW
   rules:
   - from:
     - source:
@@ -253,6 +262,7 @@ kind: AuthorizationPolicy
 metadata:
   name: recommendationservice-authpol
 spec:
+  action: ALLOW
   rules:
   - from:
     - source:
@@ -279,6 +289,7 @@ kind: AuthorizationPolicy
 metadata:
   name: shippingservice-authpol
 spec:
+  action: ALLOW
   rules:
   - from:
     - source:

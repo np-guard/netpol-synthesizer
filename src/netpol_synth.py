@@ -153,7 +153,6 @@ class NetpolSynthesizer:
         seen_rules = set()
         for conn in conns:
             rule = {'ports': conn[1]} if conn[1] else {}
-            # {'podSelector': {'matchLabels': {'app': 'loadgenerator'}}}
             selectors = conn[0].selectors if isinstance(conn[0], DeploymentLinks) else conn[0]
             if selectors:
                 selector_key = 'from' if is_ingress else 'to'
@@ -218,6 +217,7 @@ class NetpolSynthesizer:
             if deployment.namespace:
                 metadata['namespace'] = deployment.namespace
             spec = {'selector': deployment.selectors['podSelector'],
+                    'action': 'ALLOW',
                     'rules': self._ingress_conns_to_auth_policy_rules(deployment.ingress_conns)}
             authpol = {'apiVersion': 'security.istio.io/v1beta1',
                        'kind': 'AuthorizationPolicy',
