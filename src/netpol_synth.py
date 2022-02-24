@@ -124,7 +124,7 @@ class NetpolSynthesizer:
         for sel in sel_array or []:
             col_pos = sel.find(':')
             key = sel[:col_pos]
-            val = sel[col_pos+1:]
+            val = sel[col_pos + 1:]
             res[key] = val
         return {'podSelector': {'matchLabels': res}}
 
