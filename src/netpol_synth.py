@@ -25,6 +25,7 @@ class NoAliasDumper(yaml.SafeDumper):
     This class is needed to avoid aliases and references in the generated yaml file
     (so that users will be able to copy & paste individual NetworkPolicies)
     """
+
     def ignore_aliases(self, data):
         return True
 
@@ -47,6 +48,7 @@ class NetpolSynthesizer:
     """
     This is the main class for the conversion. Call its synthesize() method to generate k8s NetworkPolicy resources
     """
+
     def __init__(self, connectivity_file, baseline_files):
         self.deployments = {}
         self.baseline_rules = BaselineRules(baseline_files)
@@ -190,7 +192,6 @@ class NetpolSynthesizer:
                 src_deployments = self._find_deployments_from_pod_selector(conn[0])
             else:
                 src_deployments = [conn[0]]
-            #assert isinstance(conn[0], DeploymentLinks)
             principals_list = []
             for src_deployment in src_deployments:
                 if src_deployment.service_account_name != '':
@@ -251,7 +252,8 @@ class NetpolSynthesizer:
         :param policy_type: the required policy type (k8s/istio)
         :return: None
         """
-        policy_list = self._synthesize_istio_authorization_policies() if policy_type == 'istio' else self._synthesize_k8s_network_policies()
+        policy_list = self._synthesize_istio_authorization_policies() if policy_type == 'istio' \
+            else self._synthesize_k8s_network_policies()
         if output_file:
             yaml.dump_all(policy_list, output_file, Dumper=NoAliasDumper)
             print(f'\nNetwork Policies were successfully written to {output_file.name}')
@@ -265,13 +267,15 @@ def netpol_synth_main(args=None):
     :param args: Commandline arguments
     :return: None
     """
-    parser = argparse.ArgumentParser(description='A generator for micro-segmentation policies: K8s Network Policies / Istio Authorization Policies')
+    parser = argparse.ArgumentParser(
+        description='A generator for micro-segmentation policies: K8s Network Policies / Istio Authorization Policies')
     parser.add_argument('connectivity_file', type=open, help='A json input file describing connectivity')
     parser.add_argument('--baseline', '-b', type=str, metavar='FILE', action='append',
                         help='A baseline-requirements file')
     parser.add_argument('--output', '-o', type=argparse.FileType('w'), metavar='FILE',
                         help='Output file for NetworkPolicy resources')
-    parser.add_argument('--policy_type', choices=['k8s', 'istio'], help='Choose policy type to generate (k8s/istio)', default='k8s')
+    parser.add_argument('--policy_type', choices=['k8s', 'istio'], help='Choose policy type to generate (k8s/istio)',
+                        default='k8s')
     args = parser.parse_args(args)
 
     NetpolSynthesizer(args.connectivity_file, args.baseline).synthesize(args.output, args.policy_type)
