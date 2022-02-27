@@ -17,7 +17,8 @@ base_dir = Path(__file__).parent.resolve()
 common_services_dir = (base_dir / '../baseline-rules/src').resolve()
 sys.path.insert(0, str(common_services_dir))
 
-from baseline_rule import BaselineRules, BaselineRuleAction
+from baseline_rule import BaselineRule, BaselineRules, BaselineRuleAction
+from selector import LabelSelector, IpSelector
 
 
 class NoAliasDumper(yaml.SafeDumper):
@@ -69,7 +70,7 @@ class NetpolSynthesizer:
                 continue
             for connection in element:
                 src_deploy = self._find_or_add_deployment(connection['source']['Resource'])
-                used_ports_src = self._get_used_ports(connection['source']['Resource'])
+                used_ports_src = connection['source']['Resource'].get('UsedPorts', [])
                 tgt_deploy = self._find_or_add_deployment(connection['target']['Resource'])
                 links = connection['link']['resource']
                 port_list = self._links_to_port_list(links.get('network'), used_ports_src)
@@ -106,13 +107,6 @@ class NetpolSynthesizer:
             self.deployments[name] = DeploymentLinks(name, namespace, sel, labels, sa_name)
         return self.deployments[name]
 
-    @staticmethod
-    def _get_used_ports(resource):
-        res = resource.get('UsedPorts', [])
-        if res is None:
-            res = []
-        return res
-
     def _allowed_by_baseline(self, source_labels, target_labels, port_list):
         for rule in self.baseline_rules:
             if rule.action == BaselineRuleAction.deny and \
@@ -143,19 +137,21 @@ class NetpolSynthesizer:
                 if not rule.action == BaselineRuleAction.allow:
                     continue
                 if rule.matches_source(deploy.labels):
-                    deploy.egress_conns.append((rule.targets_as_netpol_peer(), rule.get_port_array()))
+                    deploy.egress_conns.append((rule.target, rule.get_port_array()))
                 if rule.matches_target(deploy.labels):
-                    deploy.ingress_conns.append((rule.sources_as_netpol_peer(), rule.get_port_array()))
+                    deploy.ingress_conns.append((rule.source, rule.get_port_array()))
 
     @staticmethod
     def _xgress_conns_to_network_policy_rules(conns, is_ingress):
         # TODO: peer type in connection has multiple options currently
-        # a conn is a tuple of (DeploymentLinks, port list) or (dict, ports list)
+        # a conn is a tuple of (DeploymentLinks, port list) or (list[Selector], ports list)
         res_rules = []
         seen_rules = set()
         for conn in conns:
             rule = {'ports': conn[1]} if conn[1] else {}
-            selectors = conn[0].selectors if isinstance(conn[0], DeploymentLinks) else conn[0]
+
+            selectors = conn[0].selectors if isinstance(conn[0], DeploymentLinks) else \
+                BaselineRule.selectors_as_netpol_peer(conn[0])
             if selectors:
                 selector_key = 'from' if is_ingress else 'to'
                 rule[selector_key] = [selectors]
@@ -172,38 +168,63 @@ class NetpolSynthesizer:
 
         return res_rules
 
-    def _find_deployments_from_pod_selector(self, selector_dict):
+    def _find_deployments_from_pod_selector(self, selectors):
+        # selectors is of type list[LabelSelector]
+        assert all(isinstance(selector, LabelSelector) for selector in selectors)
         res = []
         for deploy in self.deployments.values():
             labels = deploy.labels
-            selector_labels = selector_dict['podSelector']['matchLabels']
-            if all(labels.get(k, None) == v for k, v in selector_labels.items()):
+            if all(selector.matches(labels) for selector in selectors):
                 res.append(deploy)
         return res
 
+    def _get_auth_policy_source_from_baseline_rule_selector(self, selectors):
+        # selectors is of type list[LabelSelector] or IpSelector
+        ip_blocks_list = []
+        res = {}
+        if isinstance(selectors, IpSelector):
+            ip_blocks_list = [str(selectors.ipn)]
+        else:
+            assert all(isinstance(selector, LabelSelector) for selector in selectors)
+            src_deployments = self._find_deployments_from_pod_selector(selectors)
+            res = self._gst_auth_policy_source_from_deployments(src_deployments)
+        if ip_blocks_list:
+            res['ipBlocks'] = ip_blocks_list
+        return res
+
+    def _gst_auth_policy_source_from_deployments(self, deployments):
+        res = {}
+        principals_list = self._get_principals_list_from_deployments(deployments)
+        if principals_list:
+            res['principals'] = principals_list
+        return res
+
+    @staticmethod
+    def _get_principals_list_from_deployments(deployments):
+        principals_list = []
+        for src_deployment in deployments:
+            if src_deployment.service_account_name != '':
+                ns = src_deployment.namespace or 'default'
+                principals_list.append(f"cluster.local/ns/{ns}/sa/{src_deployment.service_account_name}")
+        return principals_list
+
     def _ingress_conns_to_auth_policy_rules(self, conns):
-        # a conn is a tuple of (DeploymentLinks, port list)
+        # a conn is a tuple of (DeploymentLinks, port list) or (list[Selector], ports list)
         res_rules = []
         seen_rules = set()
         for conn in conns:
             rule = {}
-            # TODO: validate support for connections from baseline rules
             if not isinstance(conn[0], DeploymentLinks):  # connection from baseline rule with peer as selector
-                src_deployments = self._find_deployments_from_pod_selector(conn[0])
+                src_dict = self._get_auth_policy_source_from_baseline_rule_selector(conn[0])
             else:
-                src_deployments = [conn[0]]
-            principals_list = []
-            for src_deployment in src_deployments:
-                if src_deployment.service_account_name != '':
-                    ns = src_deployment.namespace or 'default'
-                    principals_list.append(f"cluster.local/ns/{ns}/sa/{src_deployment.service_account_name}")
-            if principals_list:
-                src_list = {'principals': principals_list}
-                from_list = [{'source': src_list}]
+                src_dict = self._gst_auth_policy_source_from_deployments([conn[0]])
+            if src_dict:
+                from_list = [{'source': src_dict}]
                 rule['from'] = from_list
-            ports_list = {'ports': [str(port['port']) for port in conn[1]]}
-            to_list = [{'operation': ports_list}]
-            rule['to'] = to_list
+            if conn[1]:
+                ports_list = {'ports': [str(port['port']) for port in conn[1]]}
+                to_list = [{'operation': ports_list}]
+                rule['to'] = to_list
             rule_yaml = yaml.dump(rule)
             if rule_yaml in seen_rules:
                 continue
