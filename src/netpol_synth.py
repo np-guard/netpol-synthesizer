@@ -180,17 +180,12 @@ class NetpolSynthesizer:
 
     def _get_auth_policy_source_from_baseline_rule_selector(self, selectors):
         # selectors is of type list[LabelSelector] or IpSelector
-        ip_blocks_list = []
-        res = {}
         if isinstance(selectors, IpSelector):
-            ip_blocks_list = [str(selectors.ipn)]
-        else:
-            assert all(isinstance(selector, LabelSelector) for selector in selectors)
-            src_deployments = self._find_deployments_from_pod_selector(selectors)
-            res = self._gst_auth_policy_source_from_deployments(src_deployments)
-        if ip_blocks_list:
-            res['ipBlocks'] = ip_blocks_list
-        return res
+            return {'ipBlocks': [str(selectors.ipn)]}
+
+        assert all(isinstance(selector, LabelSelector) for selector in selectors)
+        src_deployments = self._find_deployments_from_pod_selector(selectors)
+        return self._gst_auth_policy_source_from_deployments(src_deployments)
 
     def _gst_auth_policy_source_from_deployments(self, deployments):
         res = {}
