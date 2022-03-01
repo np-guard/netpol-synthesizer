@@ -29,7 +29,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/shift-left-netconfig/netpol-synth:${{ github.event.inputs.version }}
+          tags: ghcr.io/np-guard/netpol-synth:${{ github.event.inputs.version }}
 
       - name: Create and push a new git tag
         run: |
