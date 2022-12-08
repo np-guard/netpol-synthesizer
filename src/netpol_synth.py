@@ -69,9 +69,9 @@ class NetpolSynthesizer:
             if not isinstance(element, list):
                 continue
             for connection in element:
-                src_deploy = self._find_or_add_deployment(connection['source']['Resource'])
-                used_ports_src = connection['source']['Resource'].get('UsedPorts', [])
-                tgt_deploy = self._find_or_add_deployment(connection['target']['Resource'])
+                src_deploy = self._find_or_add_deployment(connection['link']['resource'])
+                used_ports_src = connection['link']['resource'].get('UsedPorts', [])
+                tgt_deploy = self._find_or_add_deployment(connection['target']['resource'])
                 links = connection['link']['resource']
                 port_list = self._links_to_port_list(links.get('network'), used_ports_src)
                 if links.get('type') == 'LoadBalancer':
