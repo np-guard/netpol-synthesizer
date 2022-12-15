@@ -4,7 +4,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "frontend",
                 "selectors": [
                     "app:frontend"
@@ -39,7 +39,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "adservice",
                 "selectors": [
                     "app:adservice"
@@ -89,7 +89,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "checkoutservice",
                 "selectors": [
                     "app:checkoutservice"
@@ -123,7 +123,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "cartservice",
                 "selectors": [
                     "app:cartservice"
@@ -173,7 +173,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "frontend",
                 "selectors": [
                     "app:frontend"
@@ -208,7 +208,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "cartservice",
                 "selectors": [
                     "app:cartservice"
@@ -258,7 +258,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "frontend",
                 "selectors": [
                     "app:frontend"
@@ -293,7 +293,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "checkoutservice",
                 "selectors": [
                     "app:checkoutservice"
@@ -350,7 +350,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "checkoutservice",
                 "selectors": [
                     "app:checkoutservice"
@@ -384,7 +384,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "currencyservice",
                 "selectors": [
                     "app:currencyservice"
@@ -434,7 +434,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "frontend",
                 "selectors": [
                     "app:frontend"
@@ -469,7 +469,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "currencyservice",
                 "selectors": [
                     "app:currencyservice"
@@ -519,7 +519,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "checkoutservice",
                 "selectors": [
                     "app:checkoutservice"
@@ -553,7 +553,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "emailservice",
                 "selectors": [
                     "app:emailservice"
@@ -603,7 +603,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "loadgenerator",
                 "selectors": [
                     "app:loadgenerator"
@@ -627,7 +627,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "frontend",
                 "selectors": [
                     "app:frontend"
@@ -685,7 +685,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "checkoutservice",
                 "selectors": [
                     "app:checkoutservice"
@@ -719,7 +719,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "paymentservice",
                 "selectors": [
                     "app:paymentservice"
@@ -769,7 +769,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "checkoutservice",
                 "selectors": [
                     "app:checkoutservice"
@@ -803,7 +803,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "productcatalogservice",
                 "selectors": [
                     "app:productcatalogservice"
@@ -853,7 +853,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "frontend",
                 "selectors": [
                     "app:frontend"
@@ -888,7 +888,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "productcatalogservice",
                 "selectors": [
                     "app:productcatalogservice"
@@ -938,7 +938,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "recommendationservice",
                 "selectors": [
                     "app:recommendationservice"
@@ -967,7 +967,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "productcatalogservice",
                 "selectors": [
                     "app:productcatalogservice"
@@ -1017,7 +1017,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "frontend",
                 "selectors": [
                     "app:frontend"
@@ -1052,7 +1052,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "recommendationservice",
                 "selectors": [
                     "app:recommendationservice"
@@ -1104,7 +1104,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "checkoutservice",
                 "selectors": [
                     "app:checkoutservice"
@@ -1138,7 +1138,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "shippingservice",
                 "selectors": [
                     "app:shippingservice"
@@ -1188,7 +1188,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "frontend",
                 "selectors": [
                     "app:frontend"
@@ -1223,7 +1223,7 @@
             "git_url": "https://github.com/nadgowdas/microservices-demo",
             "git_branch": "matser",
             "commitid": "9133fdc043b20be15f958339e96564eac04bed6e",
-            "Resource": {
+            "resource": {
                 "name": "shippingservice",
                 "selectors": [
                     "app:shippingservice"

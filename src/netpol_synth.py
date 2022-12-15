@@ -69,9 +69,9 @@ class NetpolSynthesizer:
             if not isinstance(element, list):
                 continue
             for connection in element:
-                src_deploy = self._find_or_add_deployment(connection['source']['Resource'])
-                used_ports_src = connection['source']['Resource'].get('UsedPorts', [])
-                tgt_deploy = self._find_or_add_deployment(connection['target']['Resource'])
+                src_deploy = self._find_or_add_deployment(connection.get('source', {}).get('resource', {}))
+                used_ports_src = connection.get('source', {}).get('resource', {}).get('UsedPorts', [])
+                tgt_deploy = self._find_or_add_deployment(connection['target']['resource'])
                 links = connection['link']['resource']
                 port_list = self._links_to_port_list(links.get('network'), used_ports_src)
                 if links.get('type') == 'LoadBalancer':
@@ -95,13 +95,13 @@ class NetpolSynthesizer:
         :return: An instance of DeploymentLinks for the given deployment
         :rtype: DeploymentLinks
         """
-        name = resource['name']
+        name = resource.get('name')
         if not name:
             return DeploymentLinks('')  # empty src
 
         if name not in self.deployments:
             namespace = resource.get('namespace', '')
-            sel = self._selector_array_to_pod_selector(resource.get('selectors', []))
+            sel = self._selector_array_to_pod_selector(resource.get('labels', []))
             labels = resource.get('labels', {})
             sa_name = resource.get('serviceaccountname', 'default')
             self.deployments[name] = DeploymentLinks(name, namespace, sel, labels, sa_name)
@@ -115,20 +115,14 @@ class NetpolSynthesizer:
         return None
 
     @staticmethod
-    def _selector_array_to_pod_selector(sel_array):
-        res = {}
-        for sel in sel_array or []:
-            col_pos = sel.find(':')
-            key = sel[:col_pos]
-            val = sel[col_pos + 1:]
-            res[key] = val
-        return {'podSelector': {'matchLabels': res}}
+    def _selector_array_to_pod_selector(sel_map):
+        return {'podSelector': {'matchLabels': sel_map}}
 
     @staticmethod
     def _links_to_port_list(links, used_ports):
         if used_ports:
             # refer only to relevant ports (not all service ports are in use)
-            return [{'port': link.get('target_port')} for link in links if link.get('port') in used_ports]
+            return [{'port': link.get('target_port')} for link in links if link in used_ports]
         return [{'port': link.get('target_port')} for link in links]
 
     def _add_must_allow_connections(self):

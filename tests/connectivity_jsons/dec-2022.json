@@ -1,0 +1,93 @@
+[
+  {
+    "link": {
+      "resource": {
+        "filepath": "helm_templ.yaml",
+        "kind": "Service",
+        "name": "example-k8s",
+        "network": [
+          {
+            "port": 8600,
+            "target_port": 8600
+          }
+        ],
+        "selectors": [
+          "app:example-k8s"
+        ]
+      }
+    },
+    "target": {
+      "resource": {
+        "Envs": null,
+        "UsedPorts": null,
+        "filepath": "helm_templ.yaml",
+        "image": {
+          "id": "reg.local/example-k8s:0.1.0"
+        },
+        "kind": "Deployment",
+        "labels": {
+          "app": "example-k8s",
+          "run": "example-k8s"
+        },
+        "name": "example-k8s",
+        "network": [
+          {
+            "container_url": 8600
+          }
+        ]
+      }
+    }
+  },
+  {
+    "link": {
+      "resource": {
+        "filepath": "helm_templ.yaml",
+        "kind": "Service",
+        "name": "mariadb",
+        "namespace": "default",
+        "network": [
+          {
+            "port": 3306,
+            "protocol": "TCP",
+            "target_port": "mysql"
+          }
+        ],
+        "selectors": [
+          "app.kubernetes.io/instance:example",
+          "app.kubernetes.io/name:mariadb",
+          "app.kubernetes.io/component:primary"
+        ],
+        "type": "ClusterIP"
+      }
+    },
+    "target": {
+      "resource": {
+        "Envs": [
+          "false",
+          "example"
+        ],
+        "UsedPorts": null,
+        "filepath": "helm_templ.yaml",
+        "image": {
+          "id": "docker.io/bitnami/mariadb"
+        },
+        "kind": "StatefulSet",
+        "labels": {
+          "app.kubernetes.io/component": "primary",
+          "app.kubernetes.io/instance": "example",
+          "app.kubernetes.io/managed-by": "Helm",
+          "app.kubernetes.io/name": "mariadb",
+          "helm.sh/chart": "mariadb"
+        },
+        "name": "mariadb",
+        "namespace": "default",
+        "network": [
+          {
+            "container_url": 3306
+          }
+        ],
+        "serviceaccountname": "mariadb"
+      }
+    }
+  }
+]
