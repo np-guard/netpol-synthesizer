@@ -134,10 +134,6 @@ spec:
           k8s-app: kube-dns
   ingress:
   - from:
-    - podSelector: {}
-    ports:
-    - port: 8080
-  - from:
     - podSelector:
         matchLabels:
           app: loadgenerator

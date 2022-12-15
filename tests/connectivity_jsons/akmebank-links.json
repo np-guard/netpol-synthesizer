@@ -1,0 +1,1042 @@
+[
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "",
+            "commitid": "",
+            "resource": {
+                "name": "",
+                "selectors": null,
+                "labels": null,
+                "filepath": "",
+                "kind": "",
+                "image": {
+                    "id": ""
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "target": {
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-command",
+                "selectors": [
+                    "app:account-command-selector"
+                ],
+                "labels": {
+                    "app": "account-command-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-command-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-command",
+                "namespace": "",
+                "selectors": [
+                    "app:account-command-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "",
+            "commitid": "",
+            "resource": {
+                "name": "",
+                "selectors": null,
+                "labels": null,
+                "filepath": "",
+                "kind": "",
+                "image": {
+                    "id": ""
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "target": {
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-command",
+                "selectors": [
+                    "app:account-command-selector"
+                ],
+                "labels": {
+                    "app": "account-command-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-command-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-command",
+                "namespace": "",
+                "selectors": [
+                    "app:account-command-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "target": {
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "labels": {
+                    "app": "account-query-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-query-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "namespace": "",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "labels": {
+                    "app": "account-query-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-query-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "namespace": "",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "labels": {
+                    "app": "account-query-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-query-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "namespace": "",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "labels": {
+                    "app": "account-query-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-query-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "namespace": "",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "",
+            "commitid": "",
+            "resource": {
+                "name": "",
+                "selectors": null,
+                "labels": null,
+                "filepath": "",
+                "kind": "",
+                "image": {
+                    "id": ""
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "namespace": "",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "type": "LoadBalancer",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8000,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "",
+            "commitid": "",
+            "resource": {
+                "name": "",
+                "selectors": null,
+                "labels": null,
+                "filepath": "",
+                "kind": "",
+                "image": {
+                    "id": ""
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "namespace": "",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "type": "LoadBalancer",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8000,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "labels": {
+                    "app": "account-query-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-query-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "namespace": "",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "labels": {
+                    "app": "account-query-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-query-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "namespace": "",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "labels": {
+                    "app": "account-query-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-query-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "namespace": "",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "labels": {
+                    "app": "account-query-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-query-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-query",
+                "namespace": "",
+                "selectors": [
+                    "app:account-query-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "",
+            "commitid": "",
+            "resource": {
+                "name": "",
+                "selectors": null,
+                "labels": null,
+                "filepath": "",
+                "kind": "",
+                "image": {
+                    "id": ""
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-command",
+                "selectors": [
+                    "app:account-command-selector"
+                ],
+                "labels": {
+                    "app": "account-command-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-command-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-command",
+                "namespace": "",
+                "selectors": [
+                    "app:account-command-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "",
+            "commitid": "",
+            "resource": {
+                "name": "",
+                "selectors": null,
+                "labels": null,
+                "filepath": "",
+                "kind": "",
+                "image": {
+                    "id": ""
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-command",
+                "selectors": [
+                    "app:account-command-selector"
+                ],
+                "labels": {
+                    "app": "account-command-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "account-command-ms:1.0.0"
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "account-command",
+                "namespace": "",
+                "selectors": [
+                    "app:account-command-selector"
+                ],
+                "type": "",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8080,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "",
+            "commitid": "",
+            "resource": {
+                "name": "",
+                "selectors": null,
+                "labels": null,
+                "filepath": "",
+                "kind": "",
+                "image": {
+                    "id": ""
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "namespace": "",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "type": "LoadBalancer",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8000,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "source": {
+            "git_url": "",
+            "git_branch": "",
+            "commitid": "",
+            "resource": {
+                "name": "",
+                "selectors": null,
+                "labels": null,
+                "filepath": "",
+                "kind": "",
+                "image": {
+                    "id": ""
+                },
+                "network": null,
+                "Envs": null
+            }
+        },
+        "target": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "labels": {
+                    "app": "akmebank-ui-selector"
+                },
+                "filepath": "yaml",
+                "kind": "Deployment",
+                "image": {
+                    "id": "akmebank-ui:1.0.0"
+                },
+                "network": null,
+                "Envs": [
+                    "http://account-query:8080"
+                ]
+            }
+        },
+        "link": {
+            "git_url": "",
+            "git_branch": "matser",
+            "commitid": "4e55bcc32dd42f57c2f62f5c160c8dd645684f65",
+            "resource": {
+                "name": "akmebank-ui",
+                "namespace": "",
+                "selectors": [
+                    "app:akmebank-ui-selector"
+                ],
+                "type": "LoadBalancer",
+                "filepath": "yaml",
+                "kind": "Service",
+                "network": [
+                    {
+                        "port": 8080,
+                        "target_port": 8000,
+                        "protocol": "TCP"
+                    }
+                ]
+            }
+        }
+    }
+]
