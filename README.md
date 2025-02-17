@@ -1,5 +1,5 @@
 > [!WARNING]  
-> This repo is no longer maintained.
+> This repo is no longer being maintained.
 
 # netpol-synthesizer
 This application takes a JSON file, describing the connectivity in a given Kubernetes cluster,
