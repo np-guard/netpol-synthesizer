@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This repo is no longer maintained.
+
 # netpol-synthesizer
 This application takes a JSON file, describing the connectivity in a given Kubernetes cluster,
 and produces a set of policies (Kubernetes NetworkPolicies or Istio AuthorizationPolicies) that allow only the specified connectivity
